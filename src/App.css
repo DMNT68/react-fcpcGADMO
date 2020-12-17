@@ -1,0 +1,25 @@
+.bckg-header {
+  background: white;
+}
+.img1 {
+  width: 150px;
+  height: 150px;
+  background-image: url('./assets/images/www-02.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  background-color: #0F47AF;
+}
+
+
+.img2 {
+  width: 150px;
+  height: 150px;
+  background-image: url('./assets/images/KATHERINEVALLEJOS.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  background-color: #0F47AF;
+}

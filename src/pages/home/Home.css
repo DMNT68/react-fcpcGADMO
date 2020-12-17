@@ -1,0 +1,83 @@
+.slide {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40em;
+  color: #000;
+  text-align: center;
+  background: #364d79;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-slide {
+  background-image: url('https://www.ecured.cu/images/2/2a/Otavalo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second-slide {
+  background-image: url('https://image.freepik.com/foto-gratis/gente-negocios-reunion_1421-559.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third-slide {
+  background-image: url('https://image.freepik.com/foto-gratis/corte-martillo-libros-juicio-concepto-ley_144627-30452.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourth-slide {
+  background-image: url('https://image.freepik.com/foto-gratis/libro-fondo-tablero-verde_1150-3837.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-ethic {
+  background-image: url('../../assets/svg/ethic.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-inst {
+  background-image: url('../../assets/svg/insti.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-edu {
+  background-image: url('../../assets/svg/edu.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-contacto {
+  background-image: url('../../assets/svg/contacto.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-little-black {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.349);
+}
+.background-little-light {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  margin: 0px 20px;
+  font-weight: bold;
+}

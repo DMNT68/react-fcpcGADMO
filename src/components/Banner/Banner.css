@@ -1,0 +1,35 @@
+.banner {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.bkg-image {
+    /* background-image: url('../../assets/images/header-ibambura.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    width:  100%;
+}
+
+.img-logos {
+    width: 5em;
+    margin: 1em;
+}
+
+.img-logos2 {
+    width: 10em;
+    margin: 1em;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.MuiContainer-root {
+    display: flex;
+}
