@@ -25,6 +25,7 @@ import NotFound from '../assets/svg/undraw_page_not_found.svg';
 import { Button, Fade, makeStyles, Typography } from '@material-ui/core';
 import { Lines } from '../components/Lines';
 import { Personal } from '../pages/Personal';
+import { Gestion } from '../pages/Gestion';
 
 export const Desktop = ({paginaActive, setPaginaActive}) => {
   const classes = useStyles();
@@ -102,6 +103,9 @@ export const Desktop = ({paginaActive, setPaginaActive}) => {
               <Route path="/personal" exact={true}>
                 <Personal setPaginaActive={setPaginaActive} />
               </Route>
+              <Route path="/gestionperiodo2015-2021" exact={true}>
+              <Gestion setPaginaActive={setPaginaActive} />
+            </Route>
 
               <Route path="*">
                 <div className={classes.notFound}>

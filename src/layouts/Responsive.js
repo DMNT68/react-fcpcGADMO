@@ -41,6 +41,8 @@ import { Layout } from 'antd';
 import { Lines } from '../components/Lines';
 import { Personal } from '../pages/Personal';
 import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
+import PlaylistAddCheckOutlinedIcon from '@material-ui/icons/PlaylistAddCheckOutlined';
+import { Gestion } from '../pages/Gestion';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -153,6 +155,7 @@ export const Responsive = () => {
     { icon: <LocalLibraryRoundedIcon color="primary" />, path: '/educacionFinanciera', name: 'Educación Financiera', more: [] },
     { icon: <PeopleAltRoundedIcon color="primary" />, path: '/personal', name: 'Nuestro Personal', more: [] },
     { icon: <ContactPhoneRoundedIcon color="primary" />, path: '/contacto', name: 'Contacto', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/gestionperiodo2015-2021', name: 'Gestion Periodo 2015-2021', more: [] },
   ];
 
   const drawer = (
@@ -290,6 +293,10 @@ export const Responsive = () => {
 
             <Route path="/contacto" exact={true}>
               <Contact setPaginaActive={setPaginaActive} />
+            </Route>
+
+            <Route path="/gestionperiodo2015-2021" exact={true}>
+              <Gestion setPaginaActive={setPaginaActive} />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>

@@ -67,11 +67,12 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
       <Menu.SubMenu key="Submenu2" title="Código de Ética">
         {subMenuCodigo.map((item, idx) => (
           <Menu.SubMenu key={`sub:${idx}`} title={item.name}>
-            {item.more && item.more.map((opt, i) => (
-              <Menu.Item key={opt.path}>
-                <Link to={opt.path}>{opt.name}</Link>
-              </Menu.Item>
-            ))}
+            {item.more &&
+              item.more.map((opt, i) => (
+                <Menu.Item key={opt.path}>
+                  <Link to={opt.path}>{opt.name}</Link>
+                </Menu.Item>
+              ))}
           </Menu.SubMenu>
         ))}
       </Menu.SubMenu>
@@ -122,6 +123,16 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
       </Menu.Item>
       <Menu.Item key="6">
         <Link to="/contacto">Contacto</Link>
+        {/* {paginaActive > 0 ? (
+          <Link to="/contacto">Contacto</Link>
+        ) : (
+          <LinkScroll activeclass="active" to="contacto" spy="true" smooth="true" offset={-70} duration={500}>
+            Contacto
+          </LinkScroll>
+        )} */}
+      </Menu.Item>
+      <Menu.Item key="7">
+        <Link to="/gestionperiodo2015-2021">Gestión administración biess periodo 2015 - 2021</Link>
         {/* {paginaActive > 0 ? (
           <Link to="/contacto">Contacto</Link>
         ) : (
