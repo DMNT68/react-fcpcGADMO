@@ -141,6 +141,12 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
           </LinkScroll>
         )} */}
       </Menu.Item>
+
+      <Menu.SubMenu key="SubmenuMas" title="Más">
+        <Menu.Item key="Mas:1">
+          <Link to="/ley-orgánica-de-proteccion-de-datos-personales">CUMPLIMIENTO A LA LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.</Link>
+        </Menu.Item>
+      </Menu.SubMenu>
     </Menu>
   );
 };

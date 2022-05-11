@@ -43,6 +43,7 @@ import { Personal } from '../pages/Personal';
 import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
 import PlaylistAddCheckOutlinedIcon from '@material-ui/icons/PlaylistAddCheckOutlined';
 import { Gestion } from '../pages/Gestion';
+import { Ley } from '../pages/Ley';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -156,6 +157,7 @@ export const Responsive = () => {
     { icon: <PeopleAltRoundedIcon color="primary" />, path: '/personal', name: 'Nuestro Personal', more: [] },
     { icon: <ContactPhoneRoundedIcon color="primary" />, path: '/contacto', name: 'Contacto', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/gestionperiodo2015-2021', name: 'Gestion Periodo 2015-2021', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'CUMPLIMIENTO A LA  LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.', more: [] },
   ];
 
   const drawer = (
@@ -297,6 +299,9 @@ export const Responsive = () => {
 
             <Route path="/gestionperiodo2015-2021" exact={true}>
               <Gestion setPaginaActive={setPaginaActive} />
+            </Route>
+            <Route path="/ley-orgánica-de-proteccion-de-datos-personales" exact={true}>
+              <Ley setPaginaActive={setPaginaActive} />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>

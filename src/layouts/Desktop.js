@@ -26,6 +26,7 @@ import { Button, Fade, makeStyles, Typography } from '@material-ui/core';
 import { Lines } from '../components/Lines';
 import { Personal } from '../pages/Personal';
 import { Gestion } from '../pages/Gestion';
+import { Ley } from '../pages/Ley';
 
 export const Desktop = ({paginaActive, setPaginaActive}) => {
   const classes = useStyles();
@@ -106,6 +107,9 @@ export const Desktop = ({paginaActive, setPaginaActive}) => {
               <Route path="/gestionperiodo2015-2021" exact={true}>
               <Gestion setPaginaActive={setPaginaActive} />
             </Route>
+            <Route path="/ley-orgánica-de-proteccion-de-datos-personales" exact={true}>
+                <Ley setPaginaActive={setPaginaActive} />
+              </Route>
 
               <Route path="*">
                 <div className={classes.notFound}>
