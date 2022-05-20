@@ -27,8 +27,9 @@ import { Lines } from '../components/Lines';
 import { Personal } from '../pages/Personal';
 import { Gestion } from '../pages/Gestion';
 import { Ley } from '../pages/Ley';
+import { Anexo1 } from '../pages/Anexo1';
 
-export const Desktop = ({paginaActive, setPaginaActive}) => {
+export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
   const { Header, Content, Footer } = Layout;
   // const [paginaActive, setPaginaActive] = useState('1');
@@ -105,10 +106,13 @@ export const Desktop = ({paginaActive, setPaginaActive}) => {
                 <Personal setPaginaActive={setPaginaActive} />
               </Route>
               <Route path="/gestionperiodo2015-2021" exact={true}>
-              <Gestion setPaginaActive={setPaginaActive} />
-            </Route>
-            <Route path="/ley-orgánica-de-proteccion-de-datos-personales" exact={true}>
+                <Gestion setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/ley-orgánica-de-proteccion-de-datos-personales" exact={true}>
                 <Ley setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/anexo1" exact={true}>
+                <Anexo1 setPaginaActive={setPaginaActive} />
               </Route>
 
               <Route path="*">
@@ -127,10 +131,10 @@ export const Desktop = ({paginaActive, setPaginaActive}) => {
           <Footer className={classes.backgroundFooter}>
             <center>
               <Typography variant="body1" color="primary">
-                Copyright © {new Date().getFullYear()} fcpc-GADMO-OTAVALO |
-                <span>
+                Copyright © {new Date().getFullYear()} fcpc-GADMO-OTAVALO
+                {/* <span>
                   <a href="https://xapgreen.com/"> XAPgreen</a>
-                </span>
+                </span> */}
               </Typography>
             </center>
           </Footer>

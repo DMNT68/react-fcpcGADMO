@@ -42,8 +42,11 @@ import { Lines } from '../components/Lines';
 import { Personal } from '../pages/Personal';
 import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
 import PlaylistAddCheckOutlinedIcon from '@material-ui/icons/PlaylistAddCheckOutlined';
+import DescriptionIcon from '@material-ui/icons/Description';
+import GavelIcon from '@material-ui/icons/Gavel';
 import { Gestion } from '../pages/Gestion';
 import { Ley } from '../pages/Ley';
+import { Anexo1 } from '../pages/Anexo1';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -157,7 +160,8 @@ export const Responsive = () => {
     { icon: <PeopleAltRoundedIcon color="primary" />, path: '/personal', name: 'Nuestro Personal', more: [] },
     { icon: <ContactPhoneRoundedIcon color="primary" />, path: '/contacto', name: 'Contacto', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/gestionperiodo2015-2021', name: 'Gestion Periodo 2015-2021', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'CUMPLIMIENTO A LA  LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.', more: [] },
+    { icon: <GavelIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'CUMPLIMIENTO A LA  LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.', more: [] },
+    { icon: <DescriptionIcon color="primary" />, path: '/anexo1', name: 'ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO.', more: [] },
   ];
 
   const drawer = (
@@ -303,6 +307,9 @@ export const Responsive = () => {
             <Route path="/ley-orgánica-de-proteccion-de-datos-personales" exact={true}>
               <Ley setPaginaActive={setPaginaActive} />
             </Route>
+            <Route path="/anexo1" exact={true}>
+              <Anexo1 setPaginaActive={setPaginaActive} />
+            </Route>
             <Route path="*">
               <div className={classes.notFound}>
                 <img src={NotFound} alt="404" width="200" />
@@ -318,10 +325,10 @@ export const Responsive = () => {
           <Footer className={classes.backgroundFooter}>
             <center>
               <Typography variant="body1" color="primary">
-                Copyright © {new Date().getFullYear()} fcpc-GADMO-OTAVALO |
-                <span>
+                Copyright © {new Date().getFullYear()} fcpc-GADMO-OTAVALO
+                {/* <span>
                   <a href="https://xapgreen.com/"> XAPgreen</a>
-                </span>
+                </span> */}
               </Typography>
             </center>
           </Footer>

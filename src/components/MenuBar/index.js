@@ -64,7 +64,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
         </Menu.Item>
       </Menu.SubMenu>
 
-      <Menu.SubMenu key="Submenu2" title="Código de Ética">
+      <Menu.SubMenu key="Submenu2" title="Código de Ética y Gobierno Corporativo">
         {subMenuCodigo.map((item, idx) => (
           <Menu.SubMenu key={`sub:${idx}`} title={item.name}>
             {item.more &&
@@ -75,6 +75,9 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
               ))}
           </Menu.SubMenu>
         ))}
+        <Menu.Item key="cod:2123">
+          <Link to="/anexo1">ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO</Link>
+        </Menu.Item>
       </Menu.SubMenu>
 
       {/* <Menu.SubMenu
