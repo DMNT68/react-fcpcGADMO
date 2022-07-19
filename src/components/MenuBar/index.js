@@ -149,6 +149,10 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
         <Menu.Item key="Mas:1">
           <Link to="/ley-orgánica-de-proteccion-de-datos-personales">CUMPLIMIENTO A LA LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.</Link>
         </Menu.Item>
+
+        <Menu.Item key="Mas:2">
+          <Link to="/quejas-y-sugerencias">QUEJAS Y SUGERENCIAS.</Link>
+        </Menu.Item>
       </Menu.SubMenu>
     </Menu>
   );

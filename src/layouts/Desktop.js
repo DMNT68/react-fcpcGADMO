@@ -28,6 +28,7 @@ import { Personal } from '../pages/Personal';
 import { Gestion } from '../pages/Gestion';
 import { Ley } from '../pages/Ley';
 import { Anexo1 } from '../pages/Anexo1';
+import { Quejas } from '../pages/Quejas';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -113,6 +114,9 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/anexo1" exact={true}>
                 <Anexo1 setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/quejas-y-sugerencias" exact={true}>
+                <Quejas setPaginaActive={setPaginaActive} />
               </Route>
 
               <Route path="*">

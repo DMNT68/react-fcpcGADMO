@@ -47,6 +47,7 @@ import GavelIcon from '@material-ui/icons/Gavel';
 import { Gestion } from '../pages/Gestion';
 import { Ley } from '../pages/Ley';
 import { Anexo1 } from '../pages/Anexo1';
+import { Quejas } from '../pages/Quejas';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -162,6 +163,7 @@ export const Responsive = () => {
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/gestionperiodo2015-2021', name: 'Gestion Periodo 2015-2021', more: [] },
     { icon: <GavelIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'CUMPLIMIENTO A LA  LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.', more: [] },
     { icon: <DescriptionIcon color="primary" />, path: '/anexo1', name: 'ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO.', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/quejas-y-sugerencias', name: 'QUEJAS Y SUGERENCIAS.', more: [] },
   ];
 
   const drawer = (
@@ -309,6 +311,9 @@ export const Responsive = () => {
             </Route>
             <Route path="/anexo1" exact={true}>
               <Anexo1 setPaginaActive={setPaginaActive} />
+            </Route>
+            <Route path="/quejas-y-sugerencias" exact={true}>
+              <Quejas setPaginaActive={setPaginaActive} />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>
