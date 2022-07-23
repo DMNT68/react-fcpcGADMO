@@ -153,6 +153,9 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
         <Menu.Item key="Mas:2">
           <Link to="/quejas-y-sugerencias">QUEJAS Y SUGERENCIAS.</Link>
         </Menu.Item>
+        <Menu.Item key="Mas:2">
+          <Link to="/proceso-de-concurso-de-meritos-y-oposicion">PROCESO DE CONCURSO DE MERITOS Y OPOSICION.</Link>
+        </Menu.Item>
       </Menu.SubMenu>
     </Menu>
   );
