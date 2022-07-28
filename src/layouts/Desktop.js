@@ -30,6 +30,7 @@ import { Ley } from '../pages/Ley';
 import { Anexo1 } from '../pages/Anexo1';
 import { Quejas } from '../pages/Quejas';
 import { Bases } from '../pages/Bases';
+import { NormasCalificacion } from '../pages/NormasCalificacion';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -121,6 +122,9 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/proceso-de-concurso-de-meritos-y-oposicion" exact={true}>
                 <Bases setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/normas-para-calificacion" exact={true}>
+                <NormasCalificacion setPaginaActive={setPaginaActive} />
               </Route>
 
               <Route path="*">

@@ -49,6 +49,7 @@ import { Ley } from '../pages/Ley';
 import { Anexo1 } from '../pages/Anexo1';
 import { Quejas } from '../pages/Quejas';
 import { Bases } from '../pages/Bases';
+import { NormasCalificacion } from '../pages/NormasCalificacion';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -166,6 +167,7 @@ export const Responsive = () => {
     { icon: <DescriptionIcon color="primary" />, path: '/anexo1', name: 'ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/quejas-y-sugerencias', name: 'QUEJAS Y SUGERENCIAS.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/proceso-de-concurso-de-meritos-y-oposicion', name: 'PROCESO DE CONCURSO DE MERITOS Y OPOSICION.', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'NORMAS PARA LA CALIFICACION DE REPRESENTANTE LEGAL DEL FCPC GADMO EMAPAO.', more: [] },
   ];
 
   const drawer = (
@@ -319,6 +321,9 @@ export const Responsive = () => {
             </Route>
             <Route path="/proceso-de-concurso-de-meritos-y-oposicion" exact={true}>
               <Bases setPaginaActive={setPaginaActive} />
+            </Route>
+            <Route path="/normas-para-calificacion" exact={true}>
+              <NormasCalificacion setPaginaActive={setPaginaActive} />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>
