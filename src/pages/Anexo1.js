@@ -11,12 +11,12 @@ export const Anexo1 = ({ setPaginaActive }) => {
   return (
     <>
       <Helmet>
-        <title>ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO. | fcpcGADMO</title>
+        <title>ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO PARA LAS INSTITUCIONES QUE CONFORMAN EL SISTEMA NACIONAL DE SEGURIDAD SOCIAL. | fcpcGADMO</title>
       </Helmet>
       <Container maxWidth="md" id="contacto">
         <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 800 } : {})}>
           <Typography variant="h4" color="initial" align="center" className={classes.title}>
-            ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO.
+            ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO PARA LAS INSTITUCIONES QUE CONFORMAN EL SISTEMA NACIONAL DE SEGURIDAD SOCIAL.
           </Typography>
         </Grow>
         <Lines height={3} />
@@ -27,13 +27,13 @@ export const Anexo1 = ({ setPaginaActive }) => {
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Hidden only={['xs']}>
-            <iframe title="pdf" src="https://firebasestorage.googleapis.com/v0/b/tiempos-601b6.appspot.com/o/fcpc%2FANEXO-1-INDICADORES%20GOBIERNO-CORPORATIVO-GADMO.pdf?alt=media&token=9f534931-5b80-4267-bbba-f5ac9417314c" width="100%" height="500px"></iframe>
+            <iframe title="pdf" src="https://fcpcgadmo.com.ec/files/PROCESO-DE-CONCURSO-DE-MERITOS-Y-OPOSICION-FCPC-GADMO-REVISADO.pdf" width="100%" height="500px"></iframe>
           </Hidden>
           <Hidden only={['md', 'xl', 'lg', 'sm']}>
             <div>
               <p>
                 Abrir PDF &nbsp;
-                <a rel="noreferrer" href="https://firebasestorage.googleapis.com/v0/b/tiempos-601b6.appspot.com/o/fcpc%2FANEXO-1-INDICADORES%20GOBIERNO-CORPORATIVO-GADMO.pdf?alt=media&token=9f534931-5b80-4267-bbba-f5ac9417314c" target="_blank">
+                <a rel="noreferrer" href="https://fcpcgadmo.com.ec/files/PROCESO-DE-CONCURSO-DE-MERITOS-Y-OPOSICION-FCPC-GADMO-REVISADO.pdf" target="_blank">
                   aquí
                 </a>
                 .

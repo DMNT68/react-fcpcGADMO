@@ -76,7 +76,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
           </Menu.SubMenu>
         ))}
         <Menu.Item key="cod:2123">
-          <Link to="/anexo1">ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO</Link>
+          <Link to="/anexo1">ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO PARA LAS INSTITUCIONES QUE CONFORMAN EL SISTEMA NACIONAL DE SEGURIDAD SOCIAL</Link>
         </Menu.Item>
       </Menu.SubMenu>
 
