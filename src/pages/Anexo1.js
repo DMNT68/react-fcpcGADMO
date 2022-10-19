@@ -27,13 +27,13 @@ export const Anexo1 = ({ setPaginaActive }) => {
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Hidden only={['xs']}>
-            <iframe title="pdf" src="https://fcpcgadmo.com.ec/files/PROCESO-DE-CONCURSO-DE-MERITOS-Y-OPOSICION-FCPC-GADMO-REVISADO.pdf" width="100%" height="500px"></iframe>
+            <iframe title="pdf" src="https://fcpcgadmo.com.ec/files/ANEXO-1-INDICADORES-DE-GOBIERNO-CORPORATIVO-FCPCGADMO.pdf" width="100%" height="500px"></iframe>
           </Hidden>
           <Hidden only={['md', 'xl', 'lg', 'sm']}>
             <div>
               <p>
                 Abrir PDF &nbsp;
-                <a rel="noreferrer" href="https://fcpcgadmo.com.ec/files/PROCESO-DE-CONCURSO-DE-MERITOS-Y-OPOSICION-FCPC-GADMO-REVISADO.pdf" target="_blank">
+                <a rel="noreferrer" href="https://fcpcgadmo.com.ec/files/ANEXO-1-INDICADORES-DE-GOBIERNO-CORPORATIVO-FCPCGADMO.pdf" target="_blank">
                   aquí
                 </a>
                 .
