@@ -1,13 +1,6 @@
-import React, { useEffect } from 'react';
-import { Avatar, Card, CardContent, CardMedia, Container, Grid, Grow, Hidden, IconButton, List, ListItem, ListItemAvatar, ListItemText, makeStyles, Tooltip, Typography } from '@material-ui/core';
-import education from '../assets/svg/undraw_education.svg';
-import finance from '../assets/svg/undraw_finance.svg';
-import credit from '../assets/svg/undraw_Profile_data.svg';
-import financial from '../assets/svg/undraw_financial_data.svg';
-import security from '../assets/svg/undraw_security.svg';
-import AddCircleOutlineOutlinedIcon from '@material-ui/icons/AddCircleOutlineOutlined';
-import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
-import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
+import React from 'react';
+import { Container, Grow, Hidden, IconButton, makeStyles, Tooltip, Typography } from '@material-ui/core';
+
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
@@ -15,9 +8,41 @@ import { Helmet } from 'react-helmet';
 export const Education = ({ setPaginaActive }) => {
   const classes = useStyles();
 
-  useEffect(() => {
-    setPaginaActive(1);
-  }, [setPaginaActive]);
+  /* Creación de una matriz de objetos. */
+  const MODULOS = [
+    { name: 'EVALUACIÓN MÓDULO I', link: 'https://docs.google.com/forms/d/e/1FAIpQLSd7wiau4sxustDeia-4Clku5DYxihyFOEHy7646Cm2ULUKM6Q/viewform?usp=sf_link' },
+    { name: 'EVALUACIÓN MÓDULO II', link: 'https://docs.google.com/forms/d/e/1FAIpQLScIJ-RqDJFIm_zwZ8ss2Imk1pz1BY5fKMNZXKGZoFOiA-6O4Q/viewform?usp=sf_link' },
+    { name: 'EVALUACIÓN MÓDULO III', link: 'https://docs.google.com/forms/d/e/1FAIpQLSc8peF0IOMxP_NYenjgZrrNxXw4AMC-nZeJY7d46d2yU8YjQg/viewform?usp=sf_link' },
+    { name: 'EVALUACIÓN MÓDULO IV', link: 'https://docs.google.com/forms/d/e/1FAIpQLScyNVh4d9Rr52d62KSW9N0VwEATnKNRxJakviPaDrf7djNC8g/viewform?usp=sf_link' },
+    { name: 'EVALUACIÓN MÓDULO V', link: 'https://docs.google.com/forms/d/e/1FAIpQLSc_aEpjtEzGlbQ8urqyEQeUDkEkRMk1qeZtPSQJMDqOjPJsQw/viewform?usp=sf_link' },
+  ];
+
+  const VIDEOS = [
+    { name: 'MÓDULO I', link: 'https://www.youtube.com/embed/iccesVU2SpA' },
+    { name: 'MÓDULO II', link: 'https://www.youtube.com/embed/kgJAz09k4xc' },
+    { name: 'MÓDULO III', link: 'https://www.youtube.com/embed/3MTuHCJSqNI' },
+    { name: 'MÓDULO IV', link: 'https://www.youtube.com/embed/wbKB_Jbn9tE' },
+    { name: 'MÓDULO V', link: 'https://www.youtube.com/embed/z6D-axeD_Wc' },
+  ];
+
+  const MATERIALPDF = [
+    { name: 'MÓDULO I', link: 'https://fcpcgadmo.com.ec/files/material/Programa-de-Educacion-Financiera-32-(3934)-MODULO-1.pdf' },
+    { name: 'MÓDULO II', link: 'https://fcpcgadmo.com.ec/files/material/Programa-de-Educacion-Financiera-32-(3934)-MODULO-2.pdf' },
+    { name: 'MÓDULO III', link: 'https://fcpcgadmo.com.ec/files/material/Programa-de-Educacion-Financiera-32-(3934)-MODULO-3.pdf' },
+    { name: 'MÓDULO IV', link: 'https://fcpcgadmo.com.ec/files/material/Programa-de-Educacion-Financiera-32-(3934)-MODULO-4.pdf' },
+    { name: 'MÓDULO V', link: 'https://fcpcgadmo.com.ec/files/material/Programa-de-Educacion-Financiera-32-(3934)-MODULO-5.pdf' },
+  ];
+
+  const DIAPOSITIVASPDF = [
+    { name: 'MÓDULO I', link: 'https://fcpcgadmo.com.ec/files/material/MODULO-1-GADMO.pdf' },
+    { name: 'MÓDULO II', link: 'https://fcpcgadmo.com.ec/files/material/MODULO-2-GADMO.pdf' },
+    { name: 'MÓDULO III', link: 'https://fcpcgadmo.com.ec/files/material/MODULO-3-GADMO.pdf' },
+    { name: 'MÓDULO IV', link: 'https://fcpcgadmo.com.ec/files/material/MODULO-4-GADMO.pdf' },
+    { name: 'MÓDULO V', link: 'https://fcpcgadmo.com.ec/files/material/MODULO-5-GADMO.pdf' },
+  ];
+
+  const ENCUESTA = 'https://docs.google.com/forms/d/e/1FAIpQLSez-Csl2UZrprSU4Vv1u0xsno-tnNJUuWWJiWVkbCyZzBvGAw/viewform?usp=sf_link';
+  const LINK_YT = 'https://www.youtube.com/channel/UCRvQ_6FQzWuAPl5raOc7WGw';
 
   return (
     <>
@@ -32,170 +57,155 @@ export const Education = ({ setPaginaActive }) => {
             </Typography>
             <Lines height={3} />
             <div className={classes.space}>
-              <Typography variant="body1" color="initial"  align="justify">
-                FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC pone a disposición de todos sus partícipes y ciudadanía en general el Programa de Educación Financiera por lo cual le invitamos a registrarse en la Plataforma de manera gratuita en el siguiente enlace:
+              <Typography variant="body2" color="initial" align="justify">
+                La información contenida en esta página web administrada por el Fondo tiene propiedad intelectual de la administración por cuanto queda prohibido su uso total o parcial.
               </Typography>
-              <center>
-                <a href="https://www.edufin-fcpcbiessimbabura.com.ec" target="_blank" rel="noreferrer">
-                  https://www.edufin-fcpcbiessimbabura.com.ec/
-                </a>
-              </center>
+            </div>
+            <div className={classes.space}>
+              <Typography variant="body1" color="initial" align="justify">
+                El FONDO COMPLEMENTARIO PREVISIONAL CERRADO DE CESANTÍA PRIVADA DE LOS SERVIDORES PÚBLICOS DE CARRERA DEL GPI pone a disposición de todos sus partícipes y ciudadanía en general el Programa de Educación Financiera, por cuanto a continuación usted podrá encontrar los 5 módulos y toda la información a ser conocida para posteriormente ingresar a los links de las evaluaciones, con lo cual usted podrá acceder a la certificación de aprobación del Programa de Educación Financiera.{' '}
+              </Typography>
             </div>
           </div>
         </Grow>
         <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 900 } : {})}>
           <div>
-            <Typography variant="h6" color="initial">
-              El programa de Educación Financiera se compone de los siguientes módulos:
+            <Typography variant="h5" color="initial" align="justify">
+              <strong>Módulos Programa de Educación Financiera</strong>
             </Typography>
+            <div style={{ marginTop: '20px' }}>
+              {MATERIALPDF.map((pdf, idx) => (
+                <div key={idx} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: 20 }}>
+                  <Hidden only={['xs']}>
+                    <iframe title={pdf.name} src={pdf.link} width="100%" height="500px"></iframe>
+                  </Hidden>
+                  <Hidden only={['md', 'xl', 'lg', 'sm']}>
+                    <div>
+                      <p>
+                        Abrir PDF {pdf.name} &nbsp;
+                        <a rel="noreferrer" href={pdf.link} target="_blank">
+                          aquí
+                        </a>
+                        .
+                      </p>
+                    </div>
+                  </Hidden>
+                </div>
+              ))}
+            </div>
           </div>
         </Grow>
 
-        <Grid container direction="row" justify="center" alignItems="center" className={classes.space}>
-          <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
-            <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-              <Card className={classes.cards}>
-                <CardMedia className={classes.media} title="Módulo 1" image={education} />
-                <CardContent>
-                  <Typography variant="h5" color="initial">
-                    MÓDULO 1
+        <div style={{ marginTop: '30px' }}>
+          <Typography variant="h6" color="initial" align="justify">
+            <strong>Links de evaluación por módulo</strong>
+          </Typography>
+          {MODULOS.map((modulo) => (
+            <div key={modulo.name} style={{ marginTop: '20px' }}>
+              <Hidden only={['xs']}>
+                <Typography variant="body2" color="initial" align="justify">
+                  <strong>{modulo.name}</strong>
+                </Typography>
+                <li>
+                  <a href={modulo.link} target="_blank" rel="noreferrer">
+                    {modulo.link}
+                  </a>
+                </li>
+              </Hidden>
+              <Hidden only={['md', 'xl', 'lg', 'sm']}>
+                <center>
+                  <Typography variant="body2" color="initial" align="center">
+                    <strong>{modulo.name}</strong>
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Conceptos básicos, estructura, actores y funcionamiento del FONDO COMPLEMENTARIO PREVISIONAL CERRADO
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grow>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
-            <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-              <Card className={classes.cards}>
-                <CardMedia className={classes.media} title="Módulo 1" image={finance} />
-                <CardContent className={classes.contentCard}>
-                  <Typography variant="h5" color="initial">
-                    MÓDULO 2
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Planifica tus finanzas y ¡Ahorra!
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grow>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
-            <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-              <Card className={classes.cards}>
-                <CardMedia className={classes.media} title="Módulo 1" image={credit} />
-                <CardContent className={classes.contentCard}>
-                  <Typography variant="h5" color="initial">
-                    MÓDULO 3
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Crédito para vivir o vivir para pagar
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grow>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
-            <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-              <Card className={classes.cards}>
-                <CardMedia className={classes.media} title="Módulo 1" image={financial} />
-                <CardContent className={classes.contentCard}>
-                  <Typography variant="h5" color="initial">
-                    MÓDULO 4
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Derechos y obligaciones del usuario del sistema financiero
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grow>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} className={classes.gridItem}>
-            <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-              <Card className={classes.cards}>
-                <CardMedia className={classes.media} title="Módulo 1" image={security} />
-                <CardContent className={classes.contentCard}>
-                  <Typography variant="h5" color="initial">
-                    MÓDULO 5
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" >
-                    Sistema de Seguridad Social
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grow>
-          </Grid>
-        </Grid>
-        <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-          <div>
-            <Typography variant="body2" color="textSecondary" align="center" component="p" className={classes.space}  align="justify">
-              Ud. puede acceder a la información las 24 horas del día sin ninguna restricción.
+                  <div>
+                    <p>
+                      <a rel="noreferrer" href={ENCUESTA} target="_blank">
+                        Abrir evalución
+                      </a>
+                    </p>
+                  </div>
+                </center>
+              </Hidden>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ marginTop: '30px' }}>
+          <Typography variant="h6" color="initial" align="justify">
+            <strong>Link de encuesta de satisfacción obligatoria </strong>
+          </Typography>
+
+          <div style={{ marginTop: '20px' }}>
+            <Typography variant="body2" color="textSecondary" component="p" className={classes.space}>
+              Encuesta de Satisfacción
             </Typography>
-            <Typography variant="h5" color="initial" align="center">
-              Pasos a seguir:
-            </Typography>
-          </div>
-        </Grow>
-        <Grid container justify="center" alignItems="center" className={classes.space}>
-          <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-            <Grid item xs={12} sm={8}>
-              <List>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar className={classes.bckgAvatar}>
-                      <AddCircleOutlineOutlinedIcon fontSize="large" />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText  align="justify" primary="1. Crear una cuenta nueva en el siguiente enlace llenar los datos y escoger la opción al FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC " secondary={<a href="https://www.edufin-fcpcbiessimbabura.com.ec/">https://www.edufin-fcpcbiessimbabura.com.ec/ </a>} />
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar className={classes.bckgAvatar}>
-                      <ListAltOutlinedIcon fontSize="large" />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText  align="justify" primary="2. Escoja el curso de su preferencia con el distintivo FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC  y matricularse" />
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar className={classes.bckgAvatar}>
-                      <VerifiedUserOutlinedIcon fontSize="large" />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText  align="justify" primary="3. Revisar los contenidos y obtener su certificado." />
-                </ListItem>
-              </List>
-            </Grid>
-          </Grow>
-        </Grid>
-        <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
-          <div>
-            <Typography variant="subtitle2" color="initial" align="center">
-              Puede encontrar más información sobre el registro inicial e inscripción a los cursos en nuestro canal de youtube
-            </Typography>
-            <center>
-              <Tooltip arrow placement="top" title="Clic para ir nuesto canal de Youtube">
-                <IconButton href="https://www.youtube.com/channel/UCRvQ_6FQzWuAPl5raOc7WGw">
-                  <YouTubeIcon style={{ color: '#FF0000', fontSize: 40 }} />
-                </IconButton>
-              </Tooltip>
-            </center>
-            <Hidden only={['xs']} className={classes.space}>
+            <Hidden only={['xs']}>
+              <li>
+                <a href={ENCUESTA}>{ENCUESTA}</a>
+              </li>
+            </Hidden>
+            <Hidden only={['md', 'xl', 'lg', 'sm']}>
               <center>
-                <Grid container spacing={4} justify="center" alignItems="center" className={classes.space}>
-                  <Grid item xs={12} sm={12}>
-                    <iframe title="video 1" width="560" height="315" src="https://www.youtube.com/embed/fz6T0qNLOxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </Grid>
-                  <Grid item xs={12} sm={12}>
-                    <iframe title="video 2" width="560" height="315" src="https://www.youtube.com/embed/1SzZuQL2gpE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </Grid>
-                </Grid>
+                <Typography variant="body2" color="textSecondary" align="center" component="p" className={classes.space}>
+                  Encuesta de Satisfacción
+                </Typography>
+                <p>
+                  <a rel="noreferrer" href={ENCUESTA} target="_blank">
+                    Abrir encuesta
+                  </a>
+                </p>
               </center>
             </Hidden>
           </div>
-        </Grow>
+        </div>
+
+        <div style={{ marginTop: '30px' }}>
+          <Typography variant="h6" color="initial" align="justify">
+            <strong>Material didáctico por módulo</strong>
+          </Typography>
+
+          <div style={{ marginTop: '20px' }}>
+            {DIAPOSITIVASPDF.map((pdf, idx) => (
+              <div key={idx} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: 20 }}>
+                <Hidden only={['xs']}>
+                  <iframe title={pdf.name} src={pdf.link} width="100%" height="500px"></iframe>
+                </Hidden>
+                <Hidden only={['md', 'xl', 'lg', 'sm']}>
+                  <div>
+                    <p>
+                      Abrir PDF {pdf.name} &nbsp;
+                      <a rel="noreferrer" href={pdf.link} target="_blank">
+                        aquí
+                      </a>
+                    </p>
+                  </div>
+                </Hidden>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: '20px' }}>
+            <Hidden only={['xs']} className={classes.space}>
+              <center>
+                {VIDEOS.map((video, idx) => (
+                  <div key={idx} style={{ marginBottom: 20 }}>
+                    <iframe title={video.name} width="560" height="315" src={video.link} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  </div>
+                ))}
+              </center>
+            </Hidden>
+            <Hidden only={['sm', 'xl', 'md', 'lg']}>
+              <center>
+                <p>Mirar los video en nuestro canal de youtube</p>
+                <Tooltip arrow placement="top" title="Clic para ir nuesto canal de Youtube">
+                  <IconButton href={LINK_YT}>
+                    <YouTubeIcon style={{ color: '#FF0000', fontSize: 40 }} />
+                  </IconButton>
+                </Tooltip>
+              </center>
+            </Hidden>
+          </div>
+        </div>
       </Container>
     </>
   );
