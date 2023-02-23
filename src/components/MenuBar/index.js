@@ -37,7 +37,6 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
   ];
 
   const handleClick = (e) => {
-    console.log('click ', e);
     setPaginaActive(e.key);
   };
 
