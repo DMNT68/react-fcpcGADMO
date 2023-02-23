@@ -196,7 +196,7 @@ export const Education = ({ setPaginaActive }) => {
             </Hidden>
             <Hidden only={['sm', 'xl', 'md', 'lg']}>
               <center>
-                <p>Mirar los video en nuestro canal de youtube</p>
+                <p>Mirar los videos en nuestro canal de youtube</p>
                 <Tooltip arrow placement="top" title="Clic para ir nuesto canal de Youtube">
                   <IconButton href={LINK_YT}>
                     <YouTubeIcon style={{ color: '#FF0000', fontSize: 40 }} />
