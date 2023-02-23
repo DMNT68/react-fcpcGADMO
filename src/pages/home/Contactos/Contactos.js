@@ -5,6 +5,7 @@ import PhoneRoundedIcon from '@material-ui/icons/PhoneRounded';
 import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
 import '../Home.css';
 import { Lines } from '../../../components/Lines';
+import { ADDRESS, EMAIL, PHONE_NUMBER } from '../../constantes';
 
 export const Contactos = () => {
   const classes = useStyles();
@@ -31,7 +32,7 @@ export const Contactos = () => {
                     <LocationOnRoundedIcon color="primary" className={classes.mrIcon} /> Ubicación
                   </Typography>
                   <Typography variant="subtitle1" color="textSecondary" className={classes.value}>
-                    Calle Abdón Calderón 405 entre Bolívar y Sucre frente a DELTEX, edificio blanco y café
+                    {ADDRESS}
                   </Typography>
                 </div>
               </Grow>
@@ -41,7 +42,7 @@ export const Contactos = () => {
                     <PhoneRoundedIcon color="primary" className={classes.mrIcon} /> Teléfono
                   </Typography>
                   <Typography variant="subtitle1" color="textSecondary" className={classes.value}>
-                    062926812
+                    {PHONE_NUMBER}
                   </Typography>
                 </div>
               </Grow>
@@ -51,7 +52,7 @@ export const Contactos = () => {
                     <EmailRoundedIcon color="primary" className={classes.mrIcon} /> Correo electrónico
                   </Typography>
                   <Typography variant="subtitle1" color="textSecondary" className={classes.value}>
-                    fcpcotavalo@outlook.com
+                    {EMAIL}
                   </Typography>
                 </div>
               </Grow>

@@ -12,6 +12,7 @@ import emailjs from 'emailjs-com';
 import { useSnackbar } from 'notistack';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
+import { ADDRESS, EMAIL, PHONE_NUMBER } from './constantes';
 
 const initForm = {
   nombre: '',
@@ -105,7 +106,7 @@ export const Contact = ({ setPaginaActive }) => {
                     <LocationOnRoundedIcon color="primary" className={classes.mrIcon} /> Ubicación
                   </Typography>
                   <Typography variant="subtitle1" color="textSecondary" className={classes.value}>
-                    Calle Abdón Calderón 405 entre Bolívar y Sucre frente a DELTEX, edificio blanco y café
+                    {ADDRESS}
                   </Typography>
                 </div>
               </Grow>
@@ -115,7 +116,7 @@ export const Contact = ({ setPaginaActive }) => {
                     <PhoneRoundedIcon color="primary" className={classes.mrIcon} /> Teléfono
                   </Typography>
                   <Typography variant="subtitle1" color="textSecondary" className={classes.value}>
-                    062926812
+                    {PHONE_NUMBER}
                   </Typography>
                 </div>
               </Grow>
@@ -125,7 +126,7 @@ export const Contact = ({ setPaginaActive }) => {
                     <EmailRoundedIcon color="primary" className={classes.mrIcon} /> Correo electrónico
                   </Typography>
                   <Typography variant="subtitle1" color="textSecondary" className={classes.value}>
-                    fcpcotavalo@outlook.com
+                    {EMAIL}
                   </Typography>
                 </div>
               </Grow>
