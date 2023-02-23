@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Avatar, Card, CardContent, CardMedia, Container, Grid, Grow, Hidden, IconButton, List, ListItem, ListItemAvatar, ListItemText, makeStyles, Tooltip, Typography } from '@material-ui/core';
 import education from '../assets/svg/undraw_education.svg';
 import finance from '../assets/svg/undraw_finance.svg';
@@ -15,10 +15,6 @@ import { Helmet } from 'react-helmet';
 export const Education = ({ setPaginaActive }) => {
   const classes = useStyles();
 
-  useEffect(() => {
-    setPaginaActive(1);
-  }, [setPaginaActive]);
-
   return (
     <>
       <Helmet>
@@ -32,7 +28,7 @@ export const Education = ({ setPaginaActive }) => {
             </Typography>
             <Lines height={3} />
             <div className={classes.space}>
-              <Typography variant="body1" color="initial"  align="justify">
+              <Typography variant="body1" color="initial" align="justify">
                 FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC pone a disposición de todos sus partícipes y ciudadanía en general el Programa de Educación Financiera por lo cual le invitamos a registrarse en la Plataforma de manera gratuita en el siguiente enlace:
               </Typography>
               <center>
@@ -120,7 +116,7 @@ export const Education = ({ setPaginaActive }) => {
                   <Typography variant="h5" color="initial">
                     MÓDULO 5
                   </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p" >
+                  <Typography variant="body2" color="textSecondary" component="p">
                     Sistema de Seguridad Social
                   </Typography>
                 </CardContent>
@@ -130,15 +126,15 @@ export const Education = ({ setPaginaActive }) => {
         </Grid>
         <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
           <div>
-            <Typography variant="body2" color="textSecondary" align="center" component="p" className={classes.space}  align="justify">
+            <Typography variant="body2" color="textSecondary" align="center" component="p" className={classes.space}>
               Ud. puede acceder a la información las 24 horas del día sin ninguna restricción.
             </Typography>
-            <Typography variant="h5" color="initial" align="center">
+            {/* <Typography variant="h5" color="initial" align="center">
               Pasos a seguir:
-            </Typography>
+            </Typography> */}
           </div>
         </Grow>
-        <Grid container justify="center" alignItems="center" className={classes.space}>
+        <Grid container alignItems="center" className={classes.space}>
           <Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 1000 } : {})}>
             <Grid item xs={12} sm={8}>
               <List>
@@ -148,7 +144,7 @@ export const Education = ({ setPaginaActive }) => {
                       <AddCircleOutlineOutlinedIcon fontSize="large" />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText  align="justify" primary="1. Crear una cuenta nueva en el siguiente enlace llenar los datos y escoger la opción al FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC " secondary={<a href="https://www.edufin-fcpcbiessimbabura.com.ec/">https://www.edufin-fcpcbiessimbabura.com.ec/ </a>} />
+                  <ListItemText align="justify" primary="1. Crear una cuenta nueva en el siguiente enlace llenar los datos y escoger la opción al FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC " secondary={<a href="https://www.edufin-fcpcbiessimbabura.com.ec/">https://www.edufin-fcpcbiessimbabura.com.ec/ </a>} />
                 </ListItem>
                 <ListItem>
                   <ListItemAvatar>
@@ -156,7 +152,7 @@ export const Education = ({ setPaginaActive }) => {
                       <ListAltOutlinedIcon fontSize="large" />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText  align="justify" primary="2. Escoja el curso de su preferencia con el distintivo FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC  y matricularse" />
+                  <ListItemText align="justify" primary="2. Escoja el curso de su preferencia con el distintivo FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC  y matricularse" />
                 </ListItem>
                 <ListItem>
                   <ListItemAvatar>
@@ -164,7 +160,7 @@ export const Education = ({ setPaginaActive }) => {
                       <VerifiedUserOutlinedIcon fontSize="large" />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText  align="justify" primary="3. Revisar los contenidos y obtener su certificado." />
+                  <ListItemText align="justify" primary="3. Revisar los contenidos y obtener su certificado." />
                 </ListItem>
               </List>
             </Grid>
