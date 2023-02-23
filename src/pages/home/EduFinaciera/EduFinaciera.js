@@ -24,13 +24,8 @@ export const EduFinaciera = () => {
               </Grid>
               <Grid item xs={12} sm={6} className={classes.parrafo}>
                 <Typography variant="body1" color="textSecondary" align="justify">
-                  FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC pone a disposición de todos sus partícipes y ciudadanía en general el Programa de Educación Financiera por lo cual le invitamos a registrarse en la Plataforma de manera gratuita en el siguiente enlace:
+                  FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO FCPC pone a disposición de todos sus partícipes y ciudadanía en general el Programa de Educación Financiera.
                 </Typography>
-                <center>
-                  <a href="https://www.edufin-fcpcbiessimbabura.com.ec" target="_blank" rel="noreferrer">
-                    https://www.edufin-fcpcbiessimbabura.com.ec/
-                  </a>
-                </center>
               </Grid>
               <Grid item xs>
                 <center>
