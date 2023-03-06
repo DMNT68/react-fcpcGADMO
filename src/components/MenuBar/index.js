@@ -75,7 +75,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
           </Menu.SubMenu>
         ))}
         <Menu.Item key="cod:2123">
-          <Link to="/anexo1">ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO PARA LAS INSTITUCIONES QUE CONFORMAN EL SISTEMA NACIONAL DE SEGURIDAD SOCIAL</Link>
+          <Link to="/anexo1">Anexo 1 - Indicadores de gobierno corporativo para las instituciones que conforman el sistema nacional de seguridad social</Link>
         </Menu.Item>
       </Menu.SubMenu>
 
@@ -146,17 +146,20 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
 
       <Menu.SubMenu key="SubmenuMas" title="Más">
         <Menu.Item key="Mas:1">
-          <Link to="/ley-orgánica-de-proteccion-de-datos-personales">CUMPLIMIENTO A LA LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.</Link>
+          <Link to="/ley-orgánica-de-proteccion-de-datos-personales">Cumplimiento a la ley orgánica de protección de datos personales.</Link>
         </Menu.Item>
 
         <Menu.Item key="Mas:2">
-          <Link to="/quejas-y-sugerencias">QUEJAS Y SUGERENCIAS.</Link>
-        </Menu.Item>
-        <Menu.Item key="Mas:2">
-          <Link to="/proceso-de-concurso-de-meritos-y-oposicion">PROCESO DE CONCURSO DE MERITOS Y OPOSICION.</Link>
+          <Link to="/quejas-y-sugerencias">Quejas y sugerencias.</Link>
         </Menu.Item>
         <Menu.Item key="Mas:3">
-          <Link to="/normas-para-calificacion">NORMAS PARA LA CALIFICACION DE REPRESENTANTE LEGAL DEL FCPC GADMO EMAPAO.</Link>
+          <Link to="/proceso-de-concurso-de-meritos-y-oposicion">Proceso de concurso de meritos y oposición.</Link>
+        </Menu.Item>
+        <Menu.Item key="Mas:4">
+          <Link to="/normas-para-calificacion">Normas para la calificación de representante legal del FCPC GADMO EMAPAO.</Link>
+        </Menu.Item>
+        <Menu.Item key="Mas:5">
+          <Link to="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo">Convocatoria a la primera asamblea general ordinaria de participes - 2023.</Link>
         </Menu.Item>
       </Menu.SubMenu>
     </Menu>

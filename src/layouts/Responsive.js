@@ -50,6 +50,7 @@ import { Anexo1 } from '../pages/Anexo1';
 import { Quejas } from '../pages/Quejas';
 import { Bases } from '../pages/Bases';
 import { NormasCalificacion } from '../pages/NormasCalificacion';
+import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -163,11 +164,12 @@ export const Responsive = () => {
     { icon: <PeopleAltRoundedIcon color="primary" />, path: '/personal', name: 'Nuestro Personal', more: [] },
     { icon: <ContactPhoneRoundedIcon color="primary" />, path: '/contacto', name: 'Contacto', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/gestionperiodo2015-2021', name: 'Gestion Periodo 2015-2021', more: [] },
-    { icon: <GavelIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'CUMPLIMIENTO A LA  LEY ORGÁNICA DE PROTECCIÓN DE DATOS PERSONALES.', more: [] },
-    { icon: <DescriptionIcon color="primary" />, path: '/anexo1', name: 'ANEXO 1 - INDICADORES DE GOBIERNO CORPORATIVO PARA LAS INSTITUCIONES QUE CONFORMAN EL SISTEMA NACIONAL DE SEGURIDAD SOCIAL.', more: [] },
+    { icon: <GavelIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'Cumplimiento a la  ley orgánica de protección de datos personales.', more: [] },
+    { icon: <DescriptionIcon color="primary" />, path: '/anexo1', name: 'Anexo 1 - Indicadores de gobierno corporativo para las instituciones que conforman el sistema nacional de seguridad social.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/quejas-y-sugerencias', name: 'QUEJAS Y SUGERENCIAS.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/proceso-de-concurso-de-meritos-y-oposicion', name: 'PROCESO DE CONCURSO DE MERITOS Y OPOSICION.', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'NORMAS PARA LA CALIFICACION DE REPRESENTANTE LEGAL DEL FCPC GADMO EMAPAO.', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'Normas para la calificacion de representante legal del fcpc gadmo emapao.', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo', name: 'Convocatoria primera asamblea general ordinaria 2023 fcpc gadmo.', more: [] },
   ];
 
   const drawer = (
@@ -324,6 +326,9 @@ export const Responsive = () => {
             </Route>
             <Route path="/normas-para-calificacion" exact={true}>
               <NormasCalificacion setPaginaActive={setPaginaActive} />
+            </Route>
+            <Route path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo" exact={true}>
+              <ConvocatoriaAsamblea setPaginaActive={setPaginaActive} />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>

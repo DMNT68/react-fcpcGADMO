@@ -31,6 +31,7 @@ import { Anexo1 } from '../pages/Anexo1';
 import { Quejas } from '../pages/Quejas';
 import { Bases } from '../pages/Bases';
 import { NormasCalificacion } from '../pages/NormasCalificacion';
+import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -125,6 +126,9 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/normas-para-calificacion" exact={true}>
                 <NormasCalificacion setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo" exact={true}>
+                <ConvocatoriaAsamblea setPaginaActive={setPaginaActive} />
               </Route>
 
               <Route path="*">
