@@ -32,6 +32,7 @@ import { Quejas } from '../pages/Quejas';
 import { Bases } from '../pages/Bases';
 import { NormasCalificacion } from '../pages/NormasCalificacion';
 import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
+import { ConvocatoriaAsamblea2 } from '../pages/ConvocatoriaAsamblea2';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -129,6 +130,9 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo" exact={true}>
                 <ConvocatoriaAsamblea setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023" exact={true}>
+                <ConvocatoriaAsamblea2 setPaginaActive={setPaginaActive} />
               </Route>
 
               <Route path="*">

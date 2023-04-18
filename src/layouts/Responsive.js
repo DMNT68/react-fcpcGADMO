@@ -51,6 +51,7 @@ import { Quejas } from '../pages/Quejas';
 import { Bases } from '../pages/Bases';
 import { NormasCalificacion } from '../pages/NormasCalificacion';
 import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
+import { ConvocatoriaAsamblea2 } from '../pages/ConvocatoriaAsamblea2';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -170,6 +171,7 @@ export const Responsive = () => {
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/proceso-de-concurso-de-meritos-y-oposicion', name: 'Proceso de concurso de méritos y oposición.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'Normas para la calificación de representante legal del fcpc gadmo emapao.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo', name: 'Convocatoria primera asamblea general ordinaria 2023 fcpc gadmo.', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023', name: 'Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023', more: [] },
   ];
 
   const drawer = (
@@ -329,6 +331,9 @@ export const Responsive = () => {
             </Route>
             <Route path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo" exact={true}>
               <ConvocatoriaAsamblea setPaginaActive={setPaginaActive} />
+            </Route>
+            <Route path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023" exact={true}>
+              <ConvocatoriaAsamblea2 setPaginaActive={setPaginaActive} />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>

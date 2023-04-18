@@ -161,6 +161,9 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
         <Menu.Item key="Mas:5">
           <Link to="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo">Convocatoria a la primera asamblea general ordinaria de participes - 2023.</Link>
         </Menu.Item>
+        <Menu.Item key="Mas:6">
+          <Link to="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023">Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023</Link>
+        </Menu.Item>
       </Menu.SubMenu>
     </Menu>
   );
