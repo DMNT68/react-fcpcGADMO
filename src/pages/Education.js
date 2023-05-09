@@ -63,7 +63,7 @@ export const Education = ({ setPaginaActive }) => {
             </div>
             <div className={classes.space}>
               <Typography variant="body1" color="initial" align="justify">
-                El FONDO COMPLEMENTARIO PREVISIONAL CERRADO DE CESANTÍA PRIVADA DE LOS SERVIDORES PÚBLICOS DE CARRERA DEL GPI pone a disposición de todos sus partícipes y ciudadanía en general el Programa de Educación Financiera, por cuanto a continuación usted podrá encontrar los 5 módulos y toda la información a ser conocida para posteriormente ingresar a los links de las evaluaciones, con lo cual usted podrá acceder a la certificación de aprobación del Programa de Educación Financiera.{' '}
+                El FONDO DE CESANTÍA PRIVADO DE LOS EMPLEADOS, TRABAJADORES Y DOCENTES DEL GOBIERNO MUNICIPAL DE OTAVALO ‌Y EMPLEADOS‌ ‌Y‌ TRABAJADORES‌ ‌DE‌ ‌LA‌ ‌EMAPAO‌ ‌FCPC‌ pone a disposición de todos sus partícipes y ciudadanía en general el Programa de Educación Financiera, por cuanto a continuación usted podrá encontrar los 5 módulos y toda la información a ser conocida para posteriormente ingresar a los links de las evaluaciones, con lo cual usted podrá acceder a la certificación de aprobación del Programa de Educación Financiera.{' '}
               </Typography>
             </div>
           </div>
