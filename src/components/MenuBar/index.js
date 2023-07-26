@@ -164,6 +164,10 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
         <Menu.Item key="Mas:6">
           <Link to="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023">Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023</Link>
         </Menu.Item>
+
+        <Menu.Item key="Mas:6">
+          <Link to="/encuesta-de-educación-financiera">Encuesta de educación financiera</Link>
+        </Menu.Item>
       </Menu.SubMenu>
     </Menu>
   );

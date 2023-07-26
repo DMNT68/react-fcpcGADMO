@@ -52,6 +52,7 @@ import { Bases } from '../pages/Bases';
 import { NormasCalificacion } from '../pages/NormasCalificacion';
 import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
 import { ConvocatoriaAsamblea2 } from '../pages/ConvocatoriaAsamblea2';
+import { Encuesta } from '../pages/Encuesta';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -172,6 +173,7 @@ export const Responsive = () => {
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'Normas para la calificación de representante legal del fcpc gadmo emapao.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo', name: 'Convocatoria primera asamblea general ordinaria 2023 fcpc gadmo.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023', name: 'Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/encuesta-de-educación-financiera', name: 'Encuesta de educación financiera', more: [] },
   ];
 
   const drawer = (
@@ -334,6 +336,9 @@ export const Responsive = () => {
             </Route>
             <Route path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023" exact={true}>
               <ConvocatoriaAsamblea2 setPaginaActive={setPaginaActive} />
+            </Route>
+            <Route path="/encuesta-de-educación-financiera" exact={true}>
+              <Encuesta />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>

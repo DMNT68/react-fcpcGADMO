@@ -33,6 +33,7 @@ import { Bases } from '../pages/Bases';
 import { NormasCalificacion } from '../pages/NormasCalificacion';
 import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
 import { ConvocatoriaAsamblea2 } from '../pages/ConvocatoriaAsamblea2';
+import { Encuesta } from '../pages/Encuesta';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -133,6 +134,9 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023" exact={true}>
                 <ConvocatoriaAsamblea2 setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/encuesta-de-educación-financiera" exact={true}>
+                <Encuesta />
               </Route>
 
               <Route path="*">
