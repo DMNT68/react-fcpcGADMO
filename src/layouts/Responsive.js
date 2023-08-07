@@ -53,6 +53,7 @@ import { NormasCalificacion } from '../pages/NormasCalificacion';
 import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
 import { ConvocatoriaAsamblea2 } from '../pages/ConvocatoriaAsamblea2';
 import { Encuesta } from '../pages/Encuesta';
+import { ConvocatoriaTercera } from '../pages/ConvocatoriaTercera';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -174,6 +175,7 @@ export const Responsive = () => {
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo', name: 'Convocatoria primera asamblea general ordinaria 2023 fcpc gadmo.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023', name: 'Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/encuesta-de-educación-financiera', name: 'Encuesta de educación financiera', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/convocatoria-tercera-asamblea-2023', name: 'Convocatoria tercera asamblea extraordinaria 2023', more: [] },
   ];
 
   const drawer = (
@@ -339,6 +341,9 @@ export const Responsive = () => {
             </Route>
             <Route path="/encuesta-de-educación-financiera" exact={true}>
               <Encuesta />
+            </Route>
+            <Route path="/convocatoria-tercera-asamblea-2023" exact={true}>
+              <ConvocatoriaTercera />
             </Route>
             <Route path="*">
               <div className={classes.notFound}>

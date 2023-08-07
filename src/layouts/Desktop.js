@@ -34,6 +34,7 @@ import { NormasCalificacion } from '../pages/NormasCalificacion';
 import { ConvocatoriaAsamblea } from '../pages/ConvocatoriaAsamblea';
 import { ConvocatoriaAsamblea2 } from '../pages/ConvocatoriaAsamblea2';
 import { Encuesta } from '../pages/Encuesta';
+import { ConvocatoriaTercera } from '../pages/ConvocatoriaTercera';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -137,6 +138,9 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/encuesta-de-educación-financiera" exact={true}>
                 <Encuesta />
+              </Route>
+              <Route path="/convocatoria-tercera-asamblea-2023" exact={true}>
+                <ConvocatoriaTercera />
               </Route>
 
               <Route path="*">
