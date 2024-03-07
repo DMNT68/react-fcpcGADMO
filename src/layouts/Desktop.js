@@ -36,6 +36,33 @@ import { ConvocatoriaAsamblea2 } from '../pages/ConvocatoriaAsamblea2';
 import { Encuesta } from '../pages/Encuesta';
 import { ConvocatoriaTercera } from '../pages/ConvocatoriaTercera';
 
+import { ConvocatoriaPrimeraAsamblea2024 } from '../pages/convocatoria-2024/ConvocatoriaPrimeraAsamblea2024';
+import { Manual } from '../pages/convocatoria-2024/punto9/Manual';
+import { Resolucion } from '../pages/convocatoria-2024/punto10/Resolucion';
+import { Oficio } from '../pages/convocatoria-2024/punto10/Oficio';
+import { ManualFunciones } from '../pages/convocatoria-2024/punto11/ManualFunciones';
+import { CodigoEtica } from '../pages/convocatoria-2024/punto11/CodigoEtica';
+import { ManualLavadoActivos } from '../pages/convocatoria-2024/punto11/ManualLavadoActivos';
+import { ManualContable } from '../pages/convocatoria-2024/punto11/ManualContable';
+import { ManualRegistroCuentaIndividual } from '../pages/convocatoria-2024/punto11/ManualRegistroCuentaIndividual';
+import { ManualAdministracionRiesgo } from '../pages/convocatoria-2024/punto11/ManualAdministracionRiesgo';
+import { ManualPrestaciones } from '../pages/convocatoria-2024/punto11/ManualPrestaciones';
+import { ManualControlInterno } from '../pages/convocatoria-2024/punto11/ManualControlInterno';
+import { PoliticaActualizacionManuales } from '../pages/convocatoria-2024/punto11/PoliticaActualizacionManuales';
+import { ManualCompraVentaTitulos } from '../pages/convocatoria-2024/punto11/ManualCompraVentaTitulos';
+import { ManualInversionesNoPrivativas } from '../pages/convocatoria-2024/punto11/ManualInversionesNoPrivativas';
+import { ManualInversionesPrivativas } from '../pages/convocatoria-2024/punto11/ManualInversionesPrivativas';
+import { ManualDevolucionFondo } from '../pages/convocatoria-2024/punto11/ManualDevolucionFondo';
+import { ManualViaticos } from '../pages/convocatoria-2024/punto11/ManualViaticos';
+import { ManualCalificacion } from '../pages/convocatoria-2024/punto12/ManualCalificacion';
+import { ManualArchivoYGEstionDocumental } from '../pages/convocatoria-2024/punto12/ManualArchivoYGEstionDocumental';
+import { ManualIncidencias } from '../pages/convocatoria-2024/punto13/ManualIncidencias';
+import { ManualCambiosAplicativo } from '../pages/convocatoria-2024/punto13/ManualCambiosAplicativo';
+import { ManualGeneracionRespaldos } from '../pages/convocatoria-2024/punto13/ManualGeneracionRespaldos';
+import { ManualGestionAsambleas } from '../pages/convocatoria-2024/punto12/ManualGestionAsambleas';
+import { PoliticaEjecucionPlanEstrategico } from '../pages/convocatoria-2024/punto12/PoliticaEjecucionPlanEstrategico';
+import { ManualAdministracionDelPersonal } from '../pages/convocatoria-2024/punto12/ManualAdministracionDelPersonal';
+
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
   const { Header, Content, Footer } = Layout;
@@ -141,6 +168,96 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/convocatoria-tercera-asamblea-2023" exact={true}>
                 <ConvocatoriaTercera />
+              </Route>
+
+              {/* ConvocatoriaPrimeraAsamble2024 */}
+
+              <Route path="/convocatoria-primera-asamblea-2024" exact={true}>
+                <ConvocatoriaPrimeraAsamblea2024 />
+              </Route>
+              <Route path="/manual-de-inhabilidades-fcpc-31" exact={true}>
+                <Manual />
+              </Route>
+              <Route path="/resolucion-nro-sb-2023-02208" exact={true}>
+                <Resolucion />
+              </Route>
+              <Route path="/oficio-nro.sb-dcfcpc-2024-0134-o" exact={true}>
+                <Oficio />
+              </Route>
+              <Route path="/manual-de-funciones-fcpc" exact={true}>
+                <ManualFunciones />
+              </Route>
+              <Route path="/codigo-de-etica-fcpc" exact={true}>
+                <CodigoEtica />
+              </Route>
+              <Route path="/codigo-de-etica-fcpc" exact={true}>
+                <CodigoEtica />
+              </Route>
+              <Route path="/manual-de-viaticos-fcpc" exact={true}>
+                <ManualViaticos />
+              </Route>
+              <Route path="/manual-lavado-de-activos" exact={true}>
+                <ManualLavadoActivos />
+              </Route>
+              <Route path="/manual-contable-fcpc" exact={true}>
+                <ManualContable />
+              </Route>
+              <Route path="/manual-de-registro-de-cuenta-individual" exact={true}>
+                <ManualRegistroCuentaIndividual />
+              </Route>
+              <Route path="/manual-para-la-administracion-del-riesgo" exact={true}>
+                <ManualAdministracionRiesgo />
+              </Route>
+              <Route path="/manual-para-la-administracion-del-riesgo" exact={true}>
+                <ManualAdministracionRiesgo />
+              </Route>
+              <Route path="/manual-de-prestaciones-fcpc" exact={true}>
+                <ManualPrestaciones />
+              </Route>
+              <Route path="/manual-de-control-interno-fcpc" exact={true}>
+                <ManualControlInterno />
+              </Route>
+              <Route path="/politica-de-actualizacion-de-manuales" exact={true}>
+                <PoliticaActualizacionManuales />
+              </Route>
+              <Route path="/manual-de-compra-venta-de-titulos" exact={true}>
+                <ManualCompraVentaTitulos />
+              </Route>
+              <Route path="/manual-de-inversiones-no-privativas" exact={true}>
+                <ManualInversionesNoPrivativas />
+              </Route>
+              <Route path="/manual-de-inversiones-privativas" exact={true}>
+                <ManualInversionesPrivativas />
+              </Route>
+              <Route path="/manual-para-la-devolucion-del-fondo" exact={true}>
+                <ManualDevolucionFondo />
+              </Route>
+              <Route path="/manual-de-calificacion-y-castigo-de-cartera" exact={true}>
+                <ManualCalificacion />
+              </Route>
+              <Route path="/manual-de-administracion-del-personal" exact={true}>
+                <ManualAdministracionDelPersonal />
+              </Route>
+              <Route path="/manual-de-archivo-y-gestion-documental" exact={true}>
+                <ManualArchivoYGEstionDocumental />
+              </Route>
+              <Route path="/politica-de-ejecucion-plan-estrategico" exact={true}>
+                <PoliticaEjecucionPlanEstrategico />
+              </Route>
+              <Route path="/manual-de-gestion-de-asambleas" exact={true}>
+                <ManualGestionAsambleas />
+              </Route>
+              <Route path="/manual-incidencias" exact={true}>
+                <ManualIncidencias />
+              </Route>
+              <Route path="/manual-cambios-en-el-aplicativo" exact={true}>
+                <ManualCambiosAplicativo />
+              </Route>
+              <Route path="/manual-cambios-en-el-aplicativo" exact={true}>
+                <ManualCambiosAplicativo />
+              </Route>
+              <Route path="/manual-generacion-de-respaldos" exact={true}>
+                <ManualGeneracionRespaldos />
               </Route>
 
               <Route path="*">

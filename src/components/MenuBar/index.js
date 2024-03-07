@@ -159,17 +159,114 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
           <Link to="/normas-para-calificacion">Normas para la calificación de representante legal del FCPC GADMO EMAPAO.</Link>
         </Menu.Item>
         <Menu.Item key="Mas:5">
-          <Link to="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo">Convocatoria a la primera asamblea general ordinaria de participes - 2023.</Link>
-        </Menu.Item>
-        <Menu.Item key="Mas:6">
-          <Link to="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023">Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023</Link>
-        </Menu.Item>
-        <Menu.Item key="Mas:7">
           <Link to="/encuesta-de-educación-financiera">Encuesta de educación financiera</Link>
         </Menu.Item>
-        <Menu.Item key="Mas:8">
-          <Link to="/convocatoria-tercera-asamblea-2023">Convocatoria tercera asamblea extraordinaria 2023</Link>
-        </Menu.Item>
+
+        <Menu.SubMenu key="Mas:6" title={'Convocatorias Asambleas 2023'}>
+          <Menu.Item key="convocatoria-2023:1">
+            <Link to="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo">Convocatoria a la primera asamblea general ordinaria de participes - 2023.</Link>
+          </Menu.Item>
+          <Menu.Item key="convocatoria-2023:2">
+            <Link to="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023">Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023</Link>
+          </Menu.Item>
+          <Menu.Item key="convocatoria-2023:3">
+            <Link to="/convocatoria-tercera-asamblea-2023">Convocatoria tercera asamblea extraordinaria 2023</Link>
+          </Menu.Item>
+        </Menu.SubMenu>
+
+        <Menu.SubMenu key="Mas:7" title={'Convocatorias Asambleas 2024'}>
+          <Menu.SubMenu key="convocatoria-2024:1" title={'PRIMERA ASAMBLEA ORDINARIA 2024'}>
+            <Menu.Item key="convocatoria-2024:1.1">
+              <Link to="/convocatoria-primera-asamblea-2024">Convocatoria a la primera asamblea general ordinaria de participes - 2024</Link>
+            </Menu.Item>
+
+            <Menu.SubMenu key="punto9" title={'PUNTO 9 - MANUAL Circular Nro. SB-INCSS-2023-0051-C'}>
+              <Menu.Item key="punto9:1">
+                <Link to="/manual-de-inhabilidades-fcpc-31">Manual de inhabilidades</Link>
+              </Menu.Item>
+            </Menu.SubMenu>
+            <Menu.SubMenu key="punto10" title={'PUNTO 10 - RESOLUCIÓN SB-2023-02208'}>
+              <Menu.Item key="punto10:1">
+                <Link to="/resolucion-nro-sb-2023-02208">Resolución</Link>
+              </Menu.Item>
+              <Menu.Item key="punto10:2">
+                <Link to="/resolucion-nro-sb-2023-02208">Oficio</Link>
+              </Menu.Item>
+            </Menu.SubMenu>
+            <Menu.SubMenu key="punto11" title={'PUNTO 11 - ACTUALIZACIÓN FECHAS MANUALES EXISTENTES'}>
+              <Menu.Item key="punto11:1">
+                <Link to="/manual-de-funciones-fcpc">Manual de funciones</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:2">
+                <Link to="/codigo-de-etica-fcpc">Código Ética</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:3">
+                <Link to="/manual-de-viaticos-fcpc">Manual de viaticos</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:4">
+                <Link to="/manual-lavado-de-activos">Manual lavado de activos</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:5">
+                <Link to="/manual-contable-fcpc">Manual contable</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:6">
+                <Link to="/manual-de-registro-de-cuenta-individual">Manual de registro de cuenta individual</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:7">
+                <Link to="/manual-para-la-administracion-del-riesgo">Manual para la administraciÓn del riesgo</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:8">
+                <Link to="/manual-de-prestaciones-fcpc">Manual de prestaciones</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:9">
+                <Link to="/manual-de-control-interno-fcpc">Manual de control interno</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:10">
+                <Link to="/politica-de-actualizacion-de-manuales">PolÍtica de actualizaciÓn de manuales</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:11">
+                <Link to="/manual-de-compra-venta-de-titulos">Manual de compra venta de titulos</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:12">
+                <Link to="/manual-de-inversiones-no-privativas">Manual de inversiones no privativas</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:13">
+                <Link to="/manual-de-inversiones-privativas">Manual de inversiones privativas</Link>
+              </Menu.Item>
+              <Menu.Item key="punto11:14">
+                <Link to="/manual-para-la-devolucion-del-fondo">Manual para la devolucion del fondo</Link>
+              </Menu.Item>
+            </Menu.SubMenu>
+            <Menu.SubMenu key="punto12" title={'PUNTO 12 - MANUALES Circular Nro. BIESS-CFCO-2023-0038-C'}>
+              <Menu.Item key="punto12:1">
+                <Link to="/manual-de-calificacion-y-castigo-de-cartera">Manual de calificación y castigo de cartera</Link>
+              </Menu.Item>
+              <Menu.Item key="punto12:2">
+                <Link to="/manual-de-administracion-del-personal">Manual de administración del personal</Link>
+              </Menu.Item>
+              <Menu.Item key="punto12:3">
+                <Link to="/manual-de-archivo-y-gestion-documental">Manual de archivo y gestión documental</Link>
+              </Menu.Item>
+              <Menu.Item key="punto12:4">
+                <Link to="/politica-de-ejecucion-plan-estrategico">Politica de ejecución plan estrategico</Link>
+              </Menu.Item>
+              <Menu.Item key="punto12:5">
+                <Link to="/manual-de-gestion-de-asambleas">Manual de gestión de asambleas</Link>
+              </Menu.Item>
+            </Menu.SubMenu>
+            <Menu.SubMenu key="punto13" title={'PUNTO 13 - MANUALES Circulares SB-INCSS-2019-0003-C y SB-INCSS-2019-0003-C'}>
+              <Menu.Item key="punto13:1">
+                <Link to="/manual-incidencias">Manual incidencias</Link>
+              </Menu.Item>
+              <Menu.Item key="punto13:2">
+                <Link to="/manual-cambios-en-el-aplicativo">Manual cambios en el aplicativo</Link>
+              </Menu.Item>
+              <Menu.Item key="punto13:3">
+                <Link to="/manual-generacion-de-respaldos">Manual generación de respaldos</Link>
+              </Menu.Item>
+            </Menu.SubMenu>
+          </Menu.SubMenu>
+        </Menu.SubMenu>
       </Menu.SubMenu>
     </Menu>
   );
