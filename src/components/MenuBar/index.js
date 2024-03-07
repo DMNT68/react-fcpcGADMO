@@ -201,7 +201,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
                 <Link to="/codigo-de-etica-fcpc">Código Ética</Link>
               </Menu.Item>
               <Menu.Item key="punto11:3">
-                <Link to="/manual-de-viaticos-fcpc">Manual de viaticos</Link>
+                <Link to="/manual-de-viaticos-fcpc">Manual de viáticos</Link>
               </Menu.Item>
               <Menu.Item key="punto11:4">
                 <Link to="/manual-lavado-de-activos">Manual lavado de activos</Link>
@@ -222,7 +222,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
                 <Link to="/manual-de-control-interno-fcpc">Manual de control interno</Link>
               </Menu.Item>
               <Menu.Item key="punto11:10">
-                <Link to="/politica-de-actualizacion-de-manuales">PolÍtica de actualización de manuales</Link>
+                <Link to="/politica-de-actualizacion-de-manuales">Política de actualización de manuales</Link>
               </Menu.Item>
               <Menu.Item key="punto11:11">
                 <Link to="/manual-de-compra-venta-de-titulos">Manual de compra venta de títulos</Link>
@@ -248,7 +248,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
                 <Link to="/manual-de-archivo-y-gestion-documental">Manual de archivo y gestión documental</Link>
               </Menu.Item>
               <Menu.Item key="punto12:4">
-                <Link to="/politica-de-ejecucion-plan-estrategico">Politica de ejecución plan estrategico</Link>
+                <Link to="/politica-de-ejecucion-plan-estrategico">Política de ejecución plan estrategico</Link>
               </Menu.Item>
               <Menu.Item key="punto12:5">
                 <Link to="/manual-de-gestion-de-asambleas">Manual de gestión de asambleas</Link>
