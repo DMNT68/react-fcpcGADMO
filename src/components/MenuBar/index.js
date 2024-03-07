@@ -213,7 +213,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
                 <Link to="/manual-de-registro-de-cuenta-individual">Manual de registro de cuenta individual</Link>
               </Menu.Item>
               <Menu.Item key="punto11:7">
-                <Link to="/manual-para-la-administracion-del-riesgo">Manual para la administraciÓn del riesgo</Link>
+                <Link to="/manual-para-la-administracion-del-riesgo">Manual para la administración del riesgo</Link>
               </Menu.Item>
               <Menu.Item key="punto11:8">
                 <Link to="/manual-de-prestaciones-fcpc">Manual de prestaciones</Link>
@@ -222,10 +222,10 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
                 <Link to="/manual-de-control-interno-fcpc">Manual de control interno</Link>
               </Menu.Item>
               <Menu.Item key="punto11:10">
-                <Link to="/politica-de-actualizacion-de-manuales">PolÍtica de actualizaciÓn de manuales</Link>
+                <Link to="/politica-de-actualizacion-de-manuales">PolÍtica de actualización de manuales</Link>
               </Menu.Item>
               <Menu.Item key="punto11:11">
-                <Link to="/manual-de-compra-venta-de-titulos">Manual de compra venta de titulos</Link>
+                <Link to="/manual-de-compra-venta-de-titulos">Manual de compra venta de títulos</Link>
               </Menu.Item>
               <Menu.Item key="punto11:12">
                 <Link to="/manual-de-inversiones-no-privativas">Manual de inversiones no privativas</Link>
@@ -234,7 +234,7 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
                 <Link to="/manual-de-inversiones-privativas">Manual de inversiones privativas</Link>
               </Menu.Item>
               <Menu.Item key="punto11:14">
-                <Link to="/manual-para-la-devolucion-del-fondo">Manual para la devolucion del fondo</Link>
+                <Link to="/manual-para-la-devolucion-del-fondo">Manual para la devolución del fondo</Link>
               </Menu.Item>
             </Menu.SubMenu>
             <Menu.SubMenu key="punto12" title={'PUNTO 12 - MANUALES Circular Nro. BIESS-CFCO-2023-0038-C'}>
