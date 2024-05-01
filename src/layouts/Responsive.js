@@ -201,7 +201,7 @@ export const Responsive = () => {
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/proceso-de-concurso-de-meritos-y-oposicion', name: 'Proceso de concurso de méritos y oposición.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'Normas para la calificación de representante legal del fcpc gadmo emapao.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/encuesta-de-educación-financiera', name: 'Encuesta de educación financiera', more: [] },
-    
+
     {
       icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
       path: '/convocatoria-tercera-asamblea-2023',
@@ -215,7 +215,7 @@ export const Responsive = () => {
 
     {
       icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
-      path: '/convocatoria-tercera-asamblea-2024',
+      path: '/convocatoria-primera-asamblea-2024',
       name: 'Convocatorias Asambleas 2024',
       more: [
         { icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />, path: '/convocatoria-primera-asamblea-2024', name: 'Convocatoria a la primera asamblea general ordinaria de participes - 2024', more: [] },
@@ -228,7 +228,7 @@ export const Responsive = () => {
 
         {
           icon: <ArrowRightIcon color="primary" />,
-          path: '/convocatoria-tercera-asamblea-2023',
+          path: '/convocatoria-primera-asamblea-2023',
           name: 'PUNTO 10 - RESOLUCIÓN SB-2023-02208',
           more: [
             { icon: <ArrowRightIcon color="primary" />, path: '/resolucion-nro-sb-2023-02208', name: 'Resolución', more: [] },
@@ -238,7 +238,7 @@ export const Responsive = () => {
 
         {
           icon: <CollectionsBookmarkRoundedIcon color="primary" />,
-          path: '/convocatoria-tercera-asamblea-2023',
+          path: '/convocatoria-primera-asamblea-2023',
           name: 'PUNTO 11 - ACTUALIZACIÓN FECHAS MANUALES EXISTENTES',
           more: [
             { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-funciones-fcpc', name: 'Manual de funciones', more: [] },
@@ -271,13 +271,19 @@ export const Responsive = () => {
         },
         {
           icon: <CollectionsBookmarkRoundedIcon color="primary" />,
-          path: '/convocatoria-tercera-asamblea-2023',
+          path: '/convocatoria-primera-asamblea-2023',
           name: 'PUNTO 13 - MANUALES Circulares SB-INCSS-2019-0003-C y SB-INCSS-2019-0003-C',
           more: [
             { icon: <ArrowRightIcon color="primary" />, path: '/manual-incidencias', name: 'manual-incidencias', more: [] },
             { icon: <ArrowRightIcon color="primary" />, path: '/manual-cambios-en-el-aplicativo', name: 'Manual cambios en el aplicativo', more: [] },
             { icon: <ArrowRightIcon color="primary" />, path: '/manual-generacion-de-respaldos', name: 'Manual generación de respaldos', more: [] },
           ],
+        },
+        {
+          icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+          path: '/convocatoria-segunda-asamblea-2024',
+          name: 'Convocatoria a la segunda asamblea extraordinaria - 2024',
+          more: [],
         },
       ],
     },
@@ -566,8 +572,8 @@ export const Responsive = () => {
             {/* SEGUNDA CONVOCATORIA */}
 
             <Route path="/convocatoria-segunda-asamblea-2024" exact={true}>
-                <ConvocatoriaSegundaAsamblea2024 />
-              </Route>
+              <ConvocatoriaSegundaAsamblea2024 />
+            </Route>
 
             <Route path="*">
               <div className={classes.notFound}>
