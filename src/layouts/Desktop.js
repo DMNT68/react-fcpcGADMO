@@ -62,6 +62,7 @@ import { ManualGeneracionRespaldos } from '../pages/convocatoria-2024/punto13/Ma
 import { ManualGestionAsambleas } from '../pages/convocatoria-2024/punto12/ManualGestionAsambleas';
 import { PoliticaEjecucionPlanEstrategico } from '../pages/convocatoria-2024/punto12/PoliticaEjecucionPlanEstrategico';
 import { ManualAdministracionDelPersonal } from '../pages/convocatoria-2024/punto12/ManualAdministracionDelPersonal';
+import { ConvocatoriaSegundaAsamblea2024 } from '../pages/convocatoria-2024/segunda/ConvocatoriaSegundaAsamblea2024';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -258,6 +259,12 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/manual-generacion-de-respaldos" exact={true}>
                 <ManualGeneracionRespaldos />
+              </Route>
+
+              {/* SEGUNDA CONVOCATORIA */}
+
+              <Route path="/convocatoria-segunda-asamblea-2024" exact={true}>
+                <ConvocatoriaSegundaAsamblea2024 />
               </Route>
 
               <Route path="*">
