@@ -82,6 +82,7 @@ import { ManualGestionAsambleas } from '../pages/convocatoria-2024/punto12/Manua
 import { PoliticaEjecucionPlanEstrategico } from '../pages/convocatoria-2024/punto12/PoliticaEjecucionPlanEstrategico';
 import { ManualAdministracionDelPersonal } from '../pages/convocatoria-2024/punto12/ManualAdministracionDelPersonal';
 import { ConvocatoriaSegundaAsamblea2024 } from '../pages/convocatoria-2024/segunda/ConvocatoriaSegundaAsamblea2024';
+import { ConvocatoriaTerceraAsamblea2024 } from '../pages/convocatoria-2024/tercera/ConvocatoriaTerceraAsamblea2024';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -283,6 +284,12 @@ export const Responsive = () => {
           icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
           path: '/convocatoria-segunda-asamblea-2024',
           name: 'Convocatoria a la segunda asamblea extraordinaria - 2024',
+          more: [],
+        },
+        {
+          icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+          path: '/convocatoria-tercera-asamblea-2024',
+          name: 'Convocatoria a la tercera asamblea extraordinaria - 2024',
           more: [],
         },
       ],
@@ -573,6 +580,12 @@ export const Responsive = () => {
 
             <Route path="/convocatoria-segunda-asamblea-2024" exact={true}>
               <ConvocatoriaSegundaAsamblea2024 />
+            </Route>
+
+            {/* TERCERA CONVOCATORIA */}
+
+            <Route path="/convocatoria-tercera-asamblea-2024" exact={true}>
+              <ConvocatoriaTerceraAsamblea2024 />
             </Route>
 
             <Route path="*">
