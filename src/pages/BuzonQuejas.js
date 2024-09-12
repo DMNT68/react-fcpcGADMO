@@ -9,7 +9,7 @@ import { ABREVIACION_FONDO, URL_FONDO } from '../constants/constants';
 export const BuzonQuejas = () => {
   const classes = useStyles();
   const title = 'BUZÓN DE QUEJAS Y SUGERENCIAS.';
-  const nameFile = 'BUZON-DE-QUEJAS-Y-SUGERENCIAS-FCPC-GPI.pdf';
+  const nameFile = 'BUZON-DE-QUEJAS-Y-SUGERENCIAS-FCPC-GADMO.pdf';
   const url = `${URL_FONDO}/files/${nameFile}`;
 
   return (
