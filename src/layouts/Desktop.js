@@ -64,6 +64,7 @@ import { PoliticaEjecucionPlanEstrategico } from '../pages/convocatoria-2024/pun
 import { ManualAdministracionDelPersonal } from '../pages/convocatoria-2024/punto12/ManualAdministracionDelPersonal';
 import { ConvocatoriaSegundaAsamblea2024 } from '../pages/convocatoria-2024/segunda/ConvocatoriaSegundaAsamblea2024';
 import { ConvocatoriaTerceraAsamblea2024 } from '../pages/convocatoria-2024/tercera/ConvocatoriaTerceraAsamblea2024';
+import { BuzonQuejas } from '../pages/BuzonQuejas';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -152,6 +153,9 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               </Route>
               <Route path="/quejas-y-sugerencias" exact={true}>
                 <Quejas setPaginaActive={setPaginaActive} />
+              </Route>
+              <Route path="/buzon-de-quejas" exact={true}>
+                <BuzonQuejas />
               </Route>
               <Route path="/proceso-de-concurso-de-meritos-y-oposicion" exact={true}>
                 <Bases setPaginaActive={setPaginaActive} />

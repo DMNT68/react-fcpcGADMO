@@ -83,6 +83,7 @@ import { PoliticaEjecucionPlanEstrategico } from '../pages/convocatoria-2024/pun
 import { ManualAdministracionDelPersonal } from '../pages/convocatoria-2024/punto12/ManualAdministracionDelPersonal';
 import { ConvocatoriaSegundaAsamblea2024 } from '../pages/convocatoria-2024/segunda/ConvocatoriaSegundaAsamblea2024';
 import { ConvocatoriaTerceraAsamblea2024 } from '../pages/convocatoria-2024/tercera/ConvocatoriaTerceraAsamblea2024';
+import { BuzonQuejas } from '../pages/BuzonQuejas';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -199,6 +200,7 @@ export const Responsive = () => {
     { icon: <GavelIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'Cumplimiento a la  ley orgánica de protección de datos personales.', more: [] },
     { icon: <DescriptionIcon color="primary" />, path: '/anexo1', name: 'Anexo 1 - Indicadores de gobierno corporativo para las instituciones que conforman el sistema nacional de seguridad social.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/quejas-y-sugerencias', name: 'Quejas y sugerencias.', more: [] },
+    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/buzon-de-quejas', name: 'Buzón de quejas y sugerencias.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/proceso-de-concurso-de-meritos-y-oposicion', name: 'Proceso de concurso de méritos y oposición.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'Normas para la calificación de representante legal del fcpc gadmo emapao.', more: [] },
     { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/encuesta-de-educación-financiera', name: 'Encuesta de educación financiera', more: [] },
@@ -466,6 +468,9 @@ export const Responsive = () => {
             </Route>
             <Route path="/quejas-y-sugerencias" exact={true}>
               <Quejas setPaginaActive={setPaginaActive} />
+            </Route>
+            <Route path="/buzon-de-quejas" exact={true}>
+              <BuzonQuejas />
             </Route>
             <Route path="/proceso-de-concurso-de-meritos-y-oposicion" exact={true}>
               <Bases setPaginaActive={setPaginaActive} />

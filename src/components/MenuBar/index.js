@@ -152,6 +152,9 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
         <Menu.Item key="Mas:2">
           <Link to="/quejas-y-sugerencias">Quejas y sugerencias.</Link>
         </Menu.Item>
+        <Menu.Item key="Mas:BuzonDeQuejas">
+          <Link to="/buzon-de-quejas">Buzón de quejas y sugerencias</Link>
+        </Menu.Item>
         <Menu.Item key="Mas:3">
           <Link to="/proceso-de-concurso-de-meritos-y-oposicion">Proceso de concurso de meritos y oposición.</Link>
         </Menu.Item>
@@ -270,13 +273,11 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
             <Menu.Item key="convocatoria-2024:2.1">
               <Link to="/convocatoria-segunda-asamblea-2024">Convocatoria a la segunda asamblea extraordinaria ordinaria - 17 de mayo</Link>
             </Menu.Item>
-
           </Menu.SubMenu>
           <Menu.SubMenu key="convocatoria-2024:3" title={'TERCERA ASAMBLEA ORDINARIA 2024'}>
             <Menu.Item key="convocatoria-2024:3.1">
               <Link to="/convocatoria-tercera-asamblea-2024">Convocatoria a la tercera asamblea extraordinaria ordinaria - 25 de julio</Link>
             </Menu.Item>
-
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu.SubMenu>
