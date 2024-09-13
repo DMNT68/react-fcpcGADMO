@@ -65,6 +65,7 @@ import { ManualAdministracionDelPersonal } from '../pages/convocatoria-2024/punt
 import { ConvocatoriaSegundaAsamblea2024 } from '../pages/convocatoria-2024/segunda/ConvocatoriaSegundaAsamblea2024';
 import { ConvocatoriaTerceraAsamblea2024 } from '../pages/convocatoria-2024/tercera/ConvocatoriaTerceraAsamblea2024';
 import { BuzonQuejas } from '../pages/BuzonQuejas';
+import { ConvocatoriaCuartaAsamblea2024 } from '../pages/convocatoria-2024/cuarta/ConvocatoriaCuartaAsamblea2024';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -276,6 +277,10 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
 
               <Route path="/convocatoria-tercera-asamblea-2024" exact={true}>
                 <ConvocatoriaTerceraAsamblea2024 />
+              </Route>
+
+              <Route path="/convocatoria-cuarta-asamblea-2024" exact={true}>
+                <ConvocatoriaCuartaAsamblea2024 />
               </Route>
 
               <Route path="*">

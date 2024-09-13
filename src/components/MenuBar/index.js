@@ -279,6 +279,11 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
               <Link to="/convocatoria-tercera-asamblea-2024">Convocatoria a la tercera asamblea extraordinaria ordinaria - 25 de julio</Link>
             </Menu.Item>
           </Menu.SubMenu>
+          <Menu.SubMenu key="convocatoria-2024:2" title={'CUARTA ASAMBLEA EXTRAORDINARIA 2024'}>
+            <Menu.Item key="convocatoria-2024:4.1">
+              <Link to="/convocatoria-cuarta-asamblea-2024">Convocatoria cuarta asamblea extraordinaria - 2024</Link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu.SubMenu>
     </Menu>
