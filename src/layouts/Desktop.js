@@ -67,6 +67,32 @@ import { ConvocatoriaTerceraAsamblea2024 } from '../pages/convocatoria-2024/terc
 import { BuzonQuejas } from '../pages/BuzonQuejas';
 import { ConvocatoriaCuartaAsamblea2024 } from '../pages/convocatoria-2024/cuarta/ConvocatoriaCuartaAsamblea2024';
 
+import { ConvocatoriaPrimeraAsamblea2025 } from '../pages/convocatoria-2025/primera/ConvocatoriaPrimeraAsamblea2024';
+import { ManualInhabilidades } from '../pages/convocatoria-2025/primera/punto6/ManualInhabilidades';
+import { ManualDeFunciones } from '../pages/convocatoria-2025/primera/punto6/ManualDeFunciones';
+import { CodigoDeEtica } from '../pages/convocatoria-2025/primera/punto6/CodigoDeEtica';
+import { ManualdeViaticos } from '../pages/convocatoria-2025/primera/punto6/ManualDeViaticos';
+import { ManualDeLavadoDeActivos } from '../pages/convocatoria-2025/primera/punto6/ManualDeLavadoDeActivos';
+import { ManualDeRegistroContable } from '../pages/convocatoria-2025/primera/punto6/ManualDeRegistroContable';
+import { ManualDeRegistroContableIndividual } from '../pages/convocatoria-2025/primera/punto6/ManualDeRegistroContableIndividual';
+import { ManualdeInversionesNoPrivativas } from '../pages/convocatoria-2025/primera/punto6/ManualdeInversionesNoPrivativas';
+import { ManualdeInversionesPrivativas } from '../pages/convocatoria-2025/primera/punto6/ManualdeInversionesPrivativas';
+import { ManualParaLaAdministracionYGestionDelRiesgo } from '../pages/convocatoria-2025/primera/punto6/ManualParaLaAdministracionYGestionDelRiesgo';
+import { ManualDePrestaciones } from '../pages/convocatoria-2025/primera/punto6/ManualDePrestaciones';
+import { ManualDeControlInterno } from '../pages/convocatoria-2025/primera/punto6/ManualDeControlInterno';
+import { PoliticaDeActualizacionDeNormativa } from '../pages/convocatoria-2025/primera/punto6/PoliticaDeActualizacionDeNormativa';
+import { ManualDeCompraVentaDeTitulosValores } from '../pages/convocatoria-2025/primera/punto6/ManualDeCompraVentaDeTitulosValores';
+import { ManualDeCalificacionYCastigoDeCartera } from '../pages/convocatoria-2025/primera/punto6/ManualDeCalificacionYCastigoDeCartera';
+import { ManualDeAdministracionDelPersonalDelFondo } from '../pages/convocatoria-2025/primera/punto6/ManualDeAdministracionDelPersonalDelFondo';
+import { ManualDeArchivoYGestionDocumental } from '../pages/convocatoria-2025/primera/punto6/ManualDeArchivoYGestionDocumental';
+import { PoliticaDeEjecucion } from '../pages/convocatoria-2025/primera/punto6/PoliticaDeEjecucion';
+import { ManualDeGestionDeAsambleas } from '../pages/convocatoria-2025/primera/punto6/ManualDeGestionDeAsambleas';
+import { ManualDeTecnologiasIncidencias } from '../pages/convocatoria-2025/primera/punto6/ManualDeTecnologiasIncidencias';
+import { ManualDeTecnologiasCambiosAplicativoContable } from '../pages/convocatoria-2025/primera/punto6/ManualDeTecnologiasCambiosAplicativoContable';
+import { ManualDeTecnologiasGeneracionDeRespaldos } from '../pages/convocatoria-2025/primera/punto6/ManualDeTecnologiasGeneracionDeRespaldos';
+import { ProcedimientoParaQuejas } from '../pages/convocatoria-2025/primera/punto6/ProcedimientoParaQuejas';
+import { ManualCircular } from '../pages/convocatoria-2025/primera/punto6/ManualCircular';
+
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
   const { Header, Content, Footer } = Layout;
@@ -80,7 +106,15 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
           <Header style={{ background: 'white' }}>
             <MenuBar paginaActive={paginaActive} setPaginaActive={setPaginaActive} />
           </Header>
-          <Content style={{ margin: '10px 0px', alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <Content
+            style={{
+              margin: '10px 0px',
+              alignItems: 'center',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+            }}
+          >
             <Switch>
               <Route path="/" exact={true}>
                 <Home setPaginaActive={setPaginaActive} />
@@ -164,10 +198,16 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               <Route path="/normas-para-calificacion" exact={true}>
                 <NormasCalificacion setPaginaActive={setPaginaActive} />
               </Route>
-              <Route path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo" exact={true}>
+              <Route
+                path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo"
+                exact={true}
+              >
                 <ConvocatoriaAsamblea setPaginaActive={setPaginaActive} />
               </Route>
-              <Route path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023" exact={true}>
+              <Route
+                path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023"
+                exact={true}
+              >
                 <ConvocatoriaAsamblea2 setPaginaActive={setPaginaActive} />
               </Route>
               <Route path="/encuesta-de-educación-financiera" exact={true}>
@@ -283,13 +323,97 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
                 <ConvocatoriaCuartaAsamblea2024 />
               </Route>
 
+              {/* ConvocatoriaPrimeraAsamble2025 */}
+
+              <Route path="/convocatoria-primera-asamblea-2025">
+                <ConvocatoriaPrimeraAsamblea2025 />
+              </Route>
+              <Route path="/manual-de-inhabilidades-fcpc-68">
+                <ManualInhabilidades />
+              </Route>
+              <Route path="/manual-de-funciones-fcpc-68">
+                <ManualDeFunciones />
+              </Route>
+              <Route path="/codigo-de-etica-fcpc-68">
+                <CodigoDeEtica />
+              </Route>
+              <Route path="/manual-de-viaticos-fcpc-68">
+                <ManualdeViaticos />
+              </Route>
+              <Route path="/manual-de-lavado-de-activos-fcpc-68">
+                <ManualDeLavadoDeActivos />
+              </Route>
+              <Route path="/manual-de-registro-contable-fcpc-68">
+                <ManualDeRegistroContable />
+              </Route>
+              <Route path="/manual-de-registro-de-cuenta-individual-fcpc-68">
+                <ManualDeRegistroContableIndividual />
+              </Route>
+              <Route path="/manual-de-inversiones-no-privativas-fcpc-68">
+                <ManualdeInversionesNoPrivativas />
+              </Route>
+              <Route path="/manual-de-inversiones-privativas-fcpc-68">
+                <ManualdeInversionesPrivativas />
+              </Route>
+              <Route path="/manual-para-la-administracion-y-gestion-del-riesgo-fcpc-68">
+                <ManualParaLaAdministracionYGestionDelRiesgo />
+              </Route>
+              <Route path="/manual-de-prestaciones-fcpc-68">
+                <ManualDePrestaciones />
+              </Route>
+              <Route path="/manual-de-control-interno-fcpc-68">
+                <ManualDeControlInterno />
+              </Route>
+              <Route path="/politica-de-actualizacion-de-normativa-fcpc-68">
+                <PoliticaDeActualizacionDeNormativa />
+              </Route>
+              <Route path="/manual-de-compra-venta-de-titulos-valores-fcpc-68">
+                <ManualDeCompraVentaDeTitulosValores />
+              </Route>
+              <Route path="/manual-de-calificacion-y-castigo-de-cartera-fcpc-68">
+                <ManualDeCalificacionYCastigoDeCartera />
+              </Route>
+              <Route path="/manual-de-administración-del-personal-del-fondo-fcpc-68">
+                <ManualDeAdministracionDelPersonalDelFondo />
+              </Route>
+              <Route path="/manual-de-archivo-y-gestion-documental-fcpc-68">
+                <ManualDeArchivoYGestionDocumental />
+              </Route>
+              <Route path="/politica-de-ejecucion-plan-estrategico-y-planificacion-operativa-anual-fcpc-68">
+                <PoliticaDeEjecucion />
+              </Route>
+              <Route path="/manual-de-gestión-de-asambleas-fcpc-68">
+                <ManualDeGestionDeAsambleas />
+              </Route>
+              <Route path="/manual-de-tecnologias-incidencias-fcpc-681">
+                <ManualDeTecnologiasIncidencias />
+              </Route>
+              <Route path="/manual-de-tecnologias-cambios-en-el-aplicativo-contable-fcpc-68">
+                <ManualDeTecnologiasCambiosAplicativoContable />
+              </Route>
+              <Route path="/manual-de-tecnologias-generacion-de-respaldos-fcpc-68">
+                <ManualDeTecnologiasGeneracionDeRespaldos />
+              </Route>
+              <Route path="/procedimiento-para-tratamiento-de-quejas-y-sugerencias-fcpc">
+                <ProcedimientoParaQuejas />
+              </Route>
+
+              <Route path="/manual-circular">
+                <ManualCircular />
+              </Route>
+
               <Route path="*">
                 <div className={classes.notFound}>
                   <img src={NotFound} alt="404" width="400" style={{ margin: 20 }} />
                   <Typography variant="h3" color="primary" align="center" style={{ margin: 20 }}>
                     Página no encontrada...
                   </Typography>
-                  <Button variant="outlined" color="primary" style={{ margin: 20 }} onClick={() => (window.location.href = '/  ')}>
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    style={{ margin: 20 }}
+                    onClick={() => (window.location.href = '/  ')}
+                  >
                     REGRESAR
                   </Button>
                 </div>

@@ -86,6 +86,32 @@ import { ConvocatoriaTerceraAsamblea2024 } from '../pages/convocatoria-2024/terc
 import { BuzonQuejas } from '../pages/BuzonQuejas';
 import { ConvocatoriaCuartaAsamblea2024 } from '../pages/convocatoria-2024/cuarta/ConvocatoriaCuartaAsamblea2024';
 
+import { ConvocatoriaPrimeraAsamblea2025 } from '../pages/convocatoria-2025/primera/ConvocatoriaPrimeraAsamblea2024';
+import { ManualInhabilidades } from '../pages/convocatoria-2025/primera/punto6/ManualInhabilidades';
+import { ManualDeFunciones } from '../pages/convocatoria-2025/primera/punto6/ManualDeFunciones';
+import { CodigoDeEtica } from '../pages/convocatoria-2025/primera/punto6/CodigoDeEtica';
+import { ManualdeViaticos } from '../pages/convocatoria-2025/primera/punto6/ManualDeViaticos';
+import { ManualDeLavadoDeActivos } from '../pages/convocatoria-2025/primera/punto6/ManualDeLavadoDeActivos';
+import { ManualDeRegistroContable } from '../pages/convocatoria-2025/primera/punto6/ManualDeRegistroContable';
+import { ManualDeRegistroContableIndividual } from '../pages/convocatoria-2025/primera/punto6/ManualDeRegistroContableIndividual';
+import { ManualdeInversionesNoPrivativas } from '../pages/convocatoria-2025/primera/punto6/ManualdeInversionesNoPrivativas';
+import { ManualdeInversionesPrivativas } from '../pages/convocatoria-2025/primera/punto6/ManualdeInversionesPrivativas';
+import { ManualParaLaAdministracionYGestionDelRiesgo } from '../pages/convocatoria-2025/primera/punto6/ManualParaLaAdministracionYGestionDelRiesgo';
+import { ManualDePrestaciones } from '../pages/convocatoria-2025/primera/punto6/ManualDePrestaciones';
+import { ManualDeControlInterno } from '../pages/convocatoria-2025/primera/punto6/ManualDeControlInterno';
+import { PoliticaDeActualizacionDeNormativa } from '../pages/convocatoria-2025/primera/punto6/PoliticaDeActualizacionDeNormativa';
+import { ManualDeCompraVentaDeTitulosValores } from '../pages/convocatoria-2025/primera/punto6/ManualDeCompraVentaDeTitulosValores';
+import { ManualDeCalificacionYCastigoDeCartera } from '../pages/convocatoria-2025/primera/punto6/ManualDeCalificacionYCastigoDeCartera';
+import { ManualDeAdministracionDelPersonalDelFondo } from '../pages/convocatoria-2025/primera/punto6/ManualDeAdministracionDelPersonalDelFondo';
+import { ManualDeArchivoYGestionDocumental } from '../pages/convocatoria-2025/primera/punto6/ManualDeArchivoYGestionDocumental';
+import { PoliticaDeEjecucion } from '../pages/convocatoria-2025/primera/punto6/PoliticaDeEjecucion';
+import { ManualDeGestionDeAsambleas } from '../pages/convocatoria-2025/primera/punto6/ManualDeGestionDeAsambleas';
+import { ManualDeTecnologiasIncidencias } from '../pages/convocatoria-2025/primera/punto6/ManualDeTecnologiasIncidencias';
+import { ManualDeTecnologiasCambiosAplicativoContable } from '../pages/convocatoria-2025/primera/punto6/ManualDeTecnologiasCambiosAplicativoContable';
+import { ManualDeTecnologiasGeneracionDeRespaldos } from '../pages/convocatoria-2025/primera/punto6/ManualDeTecnologiasGeneracionDeRespaldos';
+import { ProcedimientoParaQuejas } from '../pages/convocatoria-2025/primera/punto6/ProcedimientoParaQuejas';
+import { ManualCircular } from '../pages/convocatoria-2025/primera/punto6/ManualCircular';
+
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -171,8 +197,16 @@ export const Responsive = () => {
       path: '/institucion',
       name: 'La Intitución',
       more: [
-        { icon: <ArrowRightIcon color="primary" />, path: '/institucion', name: 'Filosofia institucional' },
-        { icon: <ArrowRightIcon color="primary" />, path: '/planificacionEstrategica', name: 'Planificación Estratégica' },
+        {
+          icon: <ArrowRightIcon color="primary" />,
+          path: '/institucion',
+          name: 'Filosofia institucional',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" />,
+          path: '/planificacionEstrategica',
+          name: 'Planificación Estratégica',
+        },
       ],
     },
     {
@@ -180,40 +214,158 @@ export const Responsive = () => {
       path: '/codigoEtica',
       name: 'Código de Ética',
       more: [
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/introduccion', name: 'Introducción' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/conceptosJustificación', name: 'Conceptos y Justificación' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/disposionesPreliminares', name: 'Disposiciones Preliminares' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/normas', name: 'Normas' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/prohibicion', name: 'Prohíbicion' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/conflictos', name: 'Conflictos' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/actividadesPoliticas', name: 'Actividades Políticas' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/medioAmbiente', name: 'Medio Ambiente' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/comiteEtica', name: 'Comite de Ética' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/cumplimiento', name: 'Cumplimiento' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/medidasDisciplinarias', name: 'Medidas Disciplinarias' },
-        { icon: <ArrowRightIcon color="primary" fontSize="small" />, path: '/accesoPoliticas', name: 'Acceso a las Políticas' },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/introduccion',
+          name: 'Introducción',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/conceptosJustificación',
+          name: 'Conceptos y Justificación',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/disposionesPreliminares',
+          name: 'Disposiciones Preliminares',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/normas',
+          name: 'Normas',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/prohibicion',
+          name: 'Prohíbicion',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/conflictos',
+          name: 'Conflictos',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/actividadesPoliticas',
+          name: 'Actividades Políticas',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/medioAmbiente',
+          name: 'Medio Ambiente',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/comiteEtica',
+          name: 'Comite de Ética',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/cumplimiento',
+          name: 'Cumplimiento',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/medidasDisciplinarias',
+          name: 'Medidas Disciplinarias',
+        },
+        {
+          icon: <ArrowRightIcon color="primary" fontSize="small" />,
+          path: '/accesoPoliticas',
+          name: 'Acceso a las Políticas',
+        },
       ],
     },
-    { icon: <LocalLibraryRoundedIcon color="primary" />, path: '/educacionFinanciera', name: 'Educación Financiera', more: [] },
-    { icon: <PeopleAltRoundedIcon color="primary" />, path: '/personal', name: 'Nuestro Personal', more: [] },
-    { icon: <ContactPhoneRoundedIcon color="primary" />, path: '/contacto', name: 'Contacto', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/gestionperiodo2015-2021', name: 'Gestion Periodo 2015-2021', more: [] },
-    { icon: <GavelIcon color="primary" />, path: '/ley-orgánica-de-proteccion-de-datos-personales', name: 'Cumplimiento a la  ley orgánica de protección de datos personales.', more: [] },
-    { icon: <DescriptionIcon color="primary" />, path: '/anexo1', name: 'Anexo 1 - Indicadores de gobierno corporativo para las instituciones que conforman el sistema nacional de seguridad social.', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/quejas-y-sugerencias', name: 'Quejas y sugerencias.', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/buzon-de-quejas', name: 'Buzón de quejas y sugerencias.', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/proceso-de-concurso-de-meritos-y-oposicion', name: 'Proceso de concurso de méritos y oposición.', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/normas-para-calificacion', name: 'Normas para la calificación de representante legal del fcpc gadmo emapao.', more: [] },
-    { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/encuesta-de-educación-financiera', name: 'Encuesta de educación financiera', more: [] },
+    {
+      icon: <LocalLibraryRoundedIcon color="primary" />,
+      path: '/educacionFinanciera',
+      name: 'Educación Financiera',
+      more: [],
+    },
+    {
+      icon: <PeopleAltRoundedIcon color="primary" />,
+      path: '/personal',
+      name: 'Nuestro Personal',
+      more: [],
+    },
+    {
+      icon: <ContactPhoneRoundedIcon color="primary" />,
+      path: '/contacto',
+      name: 'Contacto',
+      more: [],
+    },
+    {
+      icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+      path: '/gestionperiodo2015-2021',
+      name: 'Gestion Periodo 2015-2021',
+      more: [],
+    },
+    {
+      icon: <GavelIcon color="primary" />,
+      path: '/ley-orgánica-de-proteccion-de-datos-personales',
+      name: 'Cumplimiento a la  ley orgánica de protección de datos personales.',
+      more: [],
+    },
+    {
+      icon: <DescriptionIcon color="primary" />,
+      path: '/anexo1',
+      name: 'Anexo 1 - Indicadores de gobierno corporativo para las instituciones que conforman el sistema nacional de seguridad social.',
+      more: [],
+    },
+    {
+      icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+      path: '/quejas-y-sugerencias',
+      name: 'Quejas y sugerencias.',
+      more: [],
+    },
+    {
+      icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+      path: '/buzon-de-quejas',
+      name: 'Buzón de quejas y sugerencias.',
+      more: [],
+    },
+    {
+      icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+      path: '/proceso-de-concurso-de-meritos-y-oposicion',
+      name: 'Proceso de concurso de méritos y oposición.',
+      more: [],
+    },
+    {
+      icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+      path: '/normas-para-calificacion',
+      name: 'Normas para la calificación de representante legal del fcpc gadmo emapao.',
+      more: [],
+    },
+    {
+      icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+      path: '/encuesta-de-educación-financiera',
+      name: 'Encuesta de educación financiera',
+      more: [],
+    },
 
     {
       icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
       path: '/convocatoria-tercera-asamblea-2023',
       name: 'Convocatorias Asambleas 2023',
       more: [
-        { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo', name: 'Convocatoria primera asamblea general ordinaria 2023 fcpc gadmo.', more: [] },
-        { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023', name: 'Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023', more: [] },
-        { icon: <PlaylistAddCheckOutlinedIcon color="primary" />, path: '/convocatoria-tercera-asamblea-2023', name: 'Convocatoria tercera asamblea extraordinaria 2023', more: [] },
+        {
+          icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+          path: '/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo',
+          name: 'Convocatoria primera asamblea general ordinaria 2023 fcpc gadmo.',
+          more: [],
+        },
+        {
+          icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+          path: '/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023',
+          name: 'Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023',
+          more: [],
+        },
+        {
+          icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
+          path: '/convocatoria-tercera-asamblea-2023',
+          name: 'Convocatoria tercera asamblea extraordinaria 2023',
+          more: [],
+        },
       ],
     },
 
@@ -222,12 +374,24 @@ export const Responsive = () => {
       path: '/convocatoria-primera-asamblea-2024',
       name: 'Convocatorias Asambleas 2024',
       more: [
-        { icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />, path: '/convocatoria-primera-asamblea-2024', name: 'Convocatoria a la primera asamblea general ordinaria de participes - 2024', more: [] },
+        {
+          icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
+          path: '/convocatoria-primera-asamblea-2024',
+          name: 'Convocatoria a la primera asamblea general ordinaria de participes - 2024',
+          more: [],
+        },
         {
           icon: <CollectionsBookmarkRoundedIcon color="primary" />,
           path: '/manual-de-inhabilidades-fcpc-31',
           name: 'PUNTO 9 - MANUAL Circular Nro. SB-INCSS-2023-0051-C',
-          more: [{ icon: <ArrowRightIcon color="primary" />, path: '/manual-de-inhabilidades-fcpc-31', name: 'Manual de inhabilidades', more: [] }],
+          more: [
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-inhabilidades-fcpc-31',
+              name: 'Manual de inhabilidades',
+              more: [],
+            },
+          ],
         },
 
         {
@@ -235,8 +399,18 @@ export const Responsive = () => {
           path: '/convocatoria-primera-asamblea-2023',
           name: 'PUNTO 10 - RESOLUCIÓN SB-2023-02208',
           more: [
-            { icon: <ArrowRightIcon color="primary" />, path: '/resolucion-nro-sb-2023-02208', name: 'Resolución', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/resolucion-nro-sb-2023-022olucion-nro-sb-2023-02208', name: 'Resolución', more: [] },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/resolucion-nro-sb-2023-02208',
+              name: 'Resolución',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/resolucion-nro-sb-2023-022olucion-nro-sb-2023-02208',
+              name: 'Resolución',
+              more: [],
+            },
           ],
         },
 
@@ -245,20 +419,90 @@ export const Responsive = () => {
           path: '/convocatoria-primera-asamblea-2023',
           name: 'PUNTO 11 - ACTUALIZACIÓN FECHAS MANUALES EXISTENTES',
           more: [
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-funciones-fcpc', name: 'Manual de funciones', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/codigo-de-etica-fcpc', name: 'Código Ética', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-viaticos-fcpc', name: 'Manual de viaticos', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-lavado-de-activos', name: 'Manual lavado de activos', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-contable-fcpc', name: 'Manual contable', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-registro-de-cuenta-individual', name: 'Manual de registro de cuenta individual', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-para-la-administracion-del-riesgo', name: 'Manual para la administración del riesgo', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-prestaciones-fcpc', name: 'Manual de prestaciones', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-control-interno-fcpc', name: 'Manual de control interno', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/politica-de-actualizacion-de-manuales', name: 'Política de actualización de manuales', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-compra-venta-de-titulos', name: 'Manual de compra venta de títulos', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-inversiones-no-privativas', name: 'Manual de inversiones no privativas', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-inversiones-privativas', name: 'Manual de inversiones privativas', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-para-la-devolucion-del-fondo', name: 'Manual para la devolucion del fondo', more: [] },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-funciones-fcpc',
+              name: 'Manual de funciones',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/codigo-de-etica-fcpc',
+              name: 'Código Ética',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-viaticos-fcpc',
+              name: 'Manual de viaticos',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-lavado-de-activos',
+              name: 'Manual lavado de activos',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-contable-fcpc',
+              name: 'Manual contable',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-registro-de-cuenta-individual',
+              name: 'Manual de registro de cuenta individual',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-para-la-administracion-del-riesgo',
+              name: 'Manual para la administración del riesgo',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-prestaciones-fcpc',
+              name: 'Manual de prestaciones',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-control-interno-fcpc',
+              name: 'Manual de control interno',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/politica-de-actualizacion-de-manuales',
+              name: 'Política de actualización de manuales',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-compra-venta-de-titulos',
+              name: 'Manual de compra venta de títulos',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-inversiones-no-privativas',
+              name: 'Manual de inversiones no privativas',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-inversiones-privativas',
+              name: 'Manual de inversiones privativas',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-para-la-devolucion-del-fondo',
+              name: 'Manual para la devolucion del fondo',
+              more: [],
+            },
           ],
         },
         {
@@ -266,11 +510,36 @@ export const Responsive = () => {
           path: '/manual-de-calificacion-y-castigo-de-cartera',
           name: 'PUNTO 12 - MANUALES Circular Nro. BIESS-CFCO-2023-0038-C',
           more: [
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-calificacion-y-castigo-de-cartera', name: 'Manual de calificación y castigo de cartera', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-administracion-del-personal', name: 'Manual de administración del personal', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-archivo-y-gestion-documental', name: 'Manual de archivo y gestión documental', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/politica-de-ejecucion-plan-estrategico', name: 'Política de ejecución plan estrategico', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-de-gestion-de-asambleas', name: 'Manual de gestión de asambleas', more: [] },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-calificacion-y-castigo-de-cartera',
+              name: 'Manual de calificación y castigo de cartera',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-administracion-del-personal',
+              name: 'Manual de administración del personal',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-archivo-y-gestion-documental',
+              name: 'Manual de archivo y gestión documental',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/politica-de-ejecucion-plan-estrategico',
+              name: 'Política de ejecución plan estrategico',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-gestion-de-asambleas',
+              name: 'Manual de gestión de asambleas',
+              more: [],
+            },
           ],
         },
         {
@@ -278,9 +547,24 @@ export const Responsive = () => {
           path: '/convocatoria-primera-asamblea-2023',
           name: 'PUNTO 13 - MANUALES Circulares SB-INCSS-2019-0003-C y SB-INCSS-2019-0003-C',
           more: [
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-incidencias', name: 'manual-incidencias', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-cambios-en-el-aplicativo', name: 'Manual cambios en el aplicativo', more: [] },
-            { icon: <ArrowRightIcon color="primary" />, path: '/manual-generacion-de-respaldos', name: 'Manual generación de respaldos', more: [] },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-incidencias',
+              name: 'manual-incidencias',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-cambios-en-el-aplicativo',
+              name: 'Manual cambios en el aplicativo',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-generacion-de-respaldos',
+              name: 'Manual generación de respaldos',
+              more: [],
+            },
           ],
         },
         {
@@ -303,11 +587,172 @@ export const Responsive = () => {
       name: 'Convocatoria cuarta asamblea extraordinaria 2024',
       more: [],
     },
+    {
+      icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
+      path: '/convocatoria-primera-asamblea-2025',
+      name: 'Convocatoria primera asamblea ordinaria 2025',
+      more: [
+        {
+          icon: <CollectionsBookmarkRoundedIcon color="primary" />,
+          path: '/manual-de-inhabilidades-fcpc-68',
+          name: 'PUNTO 6 - Manuales',
+          more: [
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-inhabilidades-fcpc-68',
+              name: 'Manual de inhabilidades',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-funciones-fcpc-68',
+              name: 'Manual de funciones',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/codigo-de-etica-fcpc-68',
+              name: 'Código de ética',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-viaticos-fcpc-68',
+              name: 'Manual de viaticos',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-lavado-de-activos-fcpc-68',
+              name: 'Manual de lavado de activos',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-registro-contable-fcpc-68',
+              name: 'Manual de registro contable',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-registro-de-cuenta-individual-fcpc-68',
+              name: 'Manual de registro de cuenta individual',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-inversiones-no-privativas-fcpc-68',
+              name: 'Manual de inversiones no privativas',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-inversiones-privativas-fcpc-68',
+              name: 'Manual-de inversiones privativas',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-para-la-administracion-y-gestion-del-riesgo-fcpc-68',
+              name: 'Manual para la administración y gestión del riesgo',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-prestaciones-fcpc-68',
+              name: 'Manual de prestaciones',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-control-interno-fcpc-68',
+              name: 'Manual de control interno',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/politica-de-actualizacion-de-normativa-fcpc-68',
+              name: 'Política de actualización de normativa',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-compra-venta-de-titulos-valores-fcpc-68',
+              name: 'Manual de compra venta de títulos valores',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-calificacion-y-castigo-de-cartera-fcpc-68',
+              name: 'Manual de calificación y castigo de cartera',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-administración-del-personal-del-fondo-fcpc-68',
+              name: 'Manual de administración del personal del fondo',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-archivo-y-gestion-documental-fcpc-68',
+              name: 'Manual de archivo y gestion documental',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/politica-de-ejecucion-plan-estrategico-y-planificacion-operativa-anual-fcpc-68',
+              name: 'Política de ejecución plan estratégico y planificación operativa anual',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-gestión-de-asambleas-fcpc-68',
+              name: 'Manual de gestión de asambleas',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-tecnologias-incidencias-fcpc-681',
+              name: 'Manual de tecnologias incidencias',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-tecnologias-cambios-en-el-aplicativo-contable-fcpc-68',
+              name: 'Manual de tecnologias cambios en el aplicativo contable',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/manual-de-tecnologias-generacion-de-respaldos-fcpc-68',
+              name: 'Manual de tecnologías generación de respaldos',
+              more: [],
+            },
+            {
+              icon: <ArrowRightIcon color="primary" />,
+              path: '/procedimiento-para-tratamiento-de-quejas-y-sugerencias-fcpc',
+              name: 'Procedimiento para tratamiento de quejas y sugerencias',
+              more: [],
+            },
+          ],
+        },
+        {
+          icon: <ArrowRightIcon color="primary" />,
+          path: '/manual-circular',
+          name: 'Manual circular',
+          more: [],
+        },
+      ],
+    },
   ];
 
   const drawer = (
     <div>
-      <div className={classes.toolbar} style={{ display: 'flex', justifyContent: 'right', flexDirection: 'row-reverse' }}>
+      <div
+        className={classes.toolbar}
+        style={{ display: 'flex', justifyContent: 'right', flexDirection: 'row-reverse' }}
+      >
         <IconButton aria-label="" onClick={handleDrawerToggle}>
           <CloseRoundedIcon color="primary" />
         </IconButton>
@@ -485,10 +930,16 @@ export const Responsive = () => {
             <Route path="/normas-para-calificacion" exact={true}>
               <NormasCalificacion setPaginaActive={setPaginaActive} />
             </Route>
-            <Route path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo" exact={true}>
+            <Route
+              path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo"
+              exact={true}
+            >
               <ConvocatoriaAsamblea setPaginaActive={setPaginaActive} />
             </Route>
-            <Route path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023" exact={true}>
+            <Route
+              path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023"
+              exact={true}
+            >
               <ConvocatoriaAsamblea2 setPaginaActive={setPaginaActive} />
             </Route>
             <Route path="/encuesta-de-educación-financiera" exact={true}>
@@ -604,13 +1055,97 @@ export const Responsive = () => {
               <ConvocatoriaCuartaAsamblea2024 />
             </Route>
 
+            {/* ConvocatoriaPrimeraAsamble2025 */}
+
+            <Route path="/convocatoria-primera-asamblea-2025">
+              <ConvocatoriaPrimeraAsamblea2025 />
+            </Route>
+            <Route path="/manual-de-inhabilidades-fcpc-68">
+              <ManualInhabilidades />
+            </Route>
+            <Route path="/manual-de-funciones-fcpc-68">
+              <ManualDeFunciones />
+            </Route>
+            <Route path="/codigo-de-etica-fcpc-68">
+              <CodigoDeEtica />
+            </Route>
+            <Route path="/manual-de-viaticos-fcpc-68">
+              <ManualdeViaticos />
+            </Route>
+            <Route path="/manual-de-lavado-de-activos-fcpc-68">
+              <ManualDeLavadoDeActivos />
+            </Route>
+            <Route path="/manual-de-registro-contable-fcpc-68">
+              <ManualDeRegistroContable />
+            </Route>
+            <Route path="/manual-de-registro-de-cuenta-individual-fcpc-68">
+              <ManualDeRegistroContableIndividual />
+            </Route>
+            <Route path="/manual-de-inversiones-no-privativas-fcpc-68">
+              <ManualdeInversionesNoPrivativas />
+            </Route>
+            <Route path="/manual-de-inversiones-privativas-fcpc-68">
+              <ManualdeInversionesPrivativas />
+            </Route>
+            <Route path="/manual-para-la-administracion-y-gestion-del-riesgo-fcpc-68">
+              <ManualParaLaAdministracionYGestionDelRiesgo />
+            </Route>
+            <Route path="/manual-de-prestaciones-fcpc-68">
+              <ManualDePrestaciones />
+            </Route>
+            <Route path="/manual-de-control-interno-fcpc-68">
+              <ManualDeControlInterno />
+            </Route>
+            <Route path="/politica-de-actualizacion-de-normativa-fcpc-68">
+              <PoliticaDeActualizacionDeNormativa />
+            </Route>
+            <Route path="/manual-de-compra-venta-de-titulos-valores-fcpc-68">
+              <ManualDeCompraVentaDeTitulosValores />
+            </Route>
+            <Route path="/manual-de-calificacion-y-castigo-de-cartera-fcpc-68">
+              <ManualDeCalificacionYCastigoDeCartera />
+            </Route>
+            <Route path="/manual-de-administración-del-personal-del-fondo-fcpc-68">
+              <ManualDeAdministracionDelPersonalDelFondo />
+            </Route>
+            <Route path="/manual-de-archivo-y-gestion-documental-fcpc-68">
+              <ManualDeArchivoYGestionDocumental />
+            </Route>
+            <Route path="/politica-de-ejecucion-plan-estrategico-y-planificacion-operativa-anual-fcpc-68">
+              <PoliticaDeEjecucion />
+            </Route>
+            <Route path="/manual-de-gestión-de-asambleas-fcpc-68">
+              <ManualDeGestionDeAsambleas />
+            </Route>
+            <Route path="/manual-de-tecnologias-incidencias-fcpc-681">
+              <ManualDeTecnologiasIncidencias />
+            </Route>
+            <Route path="/manual-de-tecnologias-cambios-en-el-aplicativo-contable-fcpc-68">
+              <ManualDeTecnologiasCambiosAplicativoContable />
+            </Route>
+            <Route path="/manual-de-tecnologias-generacion-de-respaldos-fcpc-68">
+              <ManualDeTecnologiasGeneracionDeRespaldos />
+            </Route>
+            <Route path="/procedimiento-para-tratamiento-de-quejas-y-sugerencias-fcpc">
+              <ProcedimientoParaQuejas />
+            </Route>
+
+            <Route path="/manual-circular">
+              <ManualCircular />
+            </Route>
+
             <Route path="*">
               <div className={classes.notFound}>
                 <img src={NotFound} alt="404" width="200" />
                 <Typography variant="h5" color="primary" align="center">
                   Página no encontrada...
                 </Typography>
-                <Button variant="outlined" color="primary" style={{ margin: 10 }} onClick={() => (window.location.href = '/  ')}>
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  style={{ margin: 10 }}
+                  onClick={() => (window.location.href = '/  ')}
+                >
                   REGRESAR
                 </Button>
               </div>
