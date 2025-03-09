@@ -92,6 +92,7 @@ import { ManualDeTecnologiasCambiosAplicativoContable } from '../pages/convocato
 import { ManualDeTecnologiasGeneracionDeRespaldos } from '../pages/convocatoria-2025/primera/punto6/ManualDeTecnologiasGeneracionDeRespaldos';
 import { ProcedimientoParaQuejas } from '../pages/convocatoria-2025/primera/punto6/ProcedimientoParaQuejas';
 import { ManualCircular } from '../pages/convocatoria-2025/primera/punto6/ManualCircular';
+import { Manuales } from '../pages/convocatoria-2025/primera/punto6';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
   const classes = useStyles();
@@ -328,78 +329,82 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
               <Route path="/convocatoria-primera-asamblea-2025">
                 <ConvocatoriaPrimeraAsamblea2025 />
               </Route>
-              <Route path="/manual-de-inhabilidades-fcpc-68">
+              <Route path="/manual-de-inhabilidades-fcpc-32">
                 <ManualInhabilidades />
               </Route>
-              <Route path="/manual-de-funciones-fcpc-68">
+              <Route path="/manual-de-funciones-fcpc-32">
                 <ManualDeFunciones />
               </Route>
-              <Route path="/codigo-de-etica-fcpc-68">
+              <Route path="/codigo-de-etica-fcpc-32">
                 <CodigoDeEtica />
               </Route>
-              <Route path="/manual-de-viaticos-fcpc-68">
+              <Route path="/manual-de-viaticos-fcpc-32">
                 <ManualdeViaticos />
               </Route>
-              <Route path="/manual-de-lavado-de-activos-fcpc-68">
+              <Route path="/manual-de-lavado-de-activos-fcpc-32">
                 <ManualDeLavadoDeActivos />
               </Route>
-              <Route path="/manual-de-registro-contable-fcpc-68">
+              <Route path="/manual-de-registro-contable-fcpc-32">
                 <ManualDeRegistroContable />
               </Route>
-              <Route path="/manual-de-registro-de-cuenta-individual-fcpc-68">
+              <Route path="/manual-de-registro-de-cuenta-individual-fcpc-32">
                 <ManualDeRegistroContableIndividual />
               </Route>
-              <Route path="/manual-de-inversiones-no-privativas-fcpc-68">
+              <Route path="/manual-de-inversiones-no-privativas-fcpc-32">
                 <ManualdeInversionesNoPrivativas />
               </Route>
-              <Route path="/manual-de-inversiones-privativas-fcpc-68">
+              <Route path="/manual-de-inversiones-privativas-fcpc-32">
                 <ManualdeInversionesPrivativas />
               </Route>
-              <Route path="/manual-para-la-administracion-y-gestion-del-riesgo-fcpc-68">
+              <Route path="/manual-para-la-administracion-y-gestion-del-riesgo-fcpc-32">
                 <ManualParaLaAdministracionYGestionDelRiesgo />
               </Route>
-              <Route path="/manual-de-prestaciones-fcpc-68">
+              <Route path="/manual-de-prestaciones-fcpc-32">
                 <ManualDePrestaciones />
               </Route>
-              <Route path="/manual-de-control-interno-fcpc-68">
+              <Route path="/manual-de-control-interno-fcpc-32">
                 <ManualDeControlInterno />
               </Route>
-              <Route path="/politica-de-actualizacion-de-normativa-fcpc-68">
+              <Route path="/politica-de-actualizacion-de-normativa-fcpc-32">
                 <PoliticaDeActualizacionDeNormativa />
               </Route>
-              <Route path="/manual-de-compra-venta-de-titulos-valores-fcpc-68">
+              <Route path="/manual-de-compra-venta-de-titulos-valores-fcpc-32">
                 <ManualDeCompraVentaDeTitulosValores />
               </Route>
-              <Route path="/manual-de-calificacion-y-castigo-de-cartera-fcpc-68">
+              <Route path="/manual-de-calificacion-y-castigo-de-cartera-fcpc-32">
                 <ManualDeCalificacionYCastigoDeCartera />
               </Route>
-              <Route path="/manual-de-administración-del-personal-del-fondo-fcpc-68">
+              <Route path="/manual-de-administración-del-personal-del-fondo-fcpc-32">
                 <ManualDeAdministracionDelPersonalDelFondo />
               </Route>
-              <Route path="/manual-de-archivo-y-gestion-documental-fcpc-68">
+              <Route path="/manual-de-archivo-y-gestion-documental-fcpc-32">
                 <ManualDeArchivoYGestionDocumental />
               </Route>
-              <Route path="/politica-de-ejecucion-plan-estrategico-y-planificacion-operativa-anual-fcpc-68">
+              <Route path="/politica-de-ejecucion-plan-estrategico-y-planificacion-operativa-anual-fcpc-32">
                 <PoliticaDeEjecucion />
               </Route>
-              <Route path="/manual-de-gestión-de-asambleas-fcpc-68">
+              <Route path="/manual-de-gestión-de-asambleas-fcpc-32">
                 <ManualDeGestionDeAsambleas />
               </Route>
-              <Route path="/manual-de-tecnologias-incidencias-fcpc-681">
+              <Route path="/manual-de-tecnologias-incidencias-fcpc-32">
                 <ManualDeTecnologiasIncidencias />
               </Route>
-              <Route path="/manual-de-tecnologias-cambios-en-el-aplicativo-contable-fcpc-68">
+              <Route path="/manual-de-tecnologias-cambios-en-el-aplicativo-contable-fcpc-32">
                 <ManualDeTecnologiasCambiosAplicativoContable />
               </Route>
-              <Route path="/manual-de-tecnologias-generacion-de-respaldos-fcpc-68">
+              <Route path="/manual-de-tecnologias-generacion-de-respaldos-fcpc-32">
                 <ManualDeTecnologiasGeneracionDeRespaldos />
               </Route>
-              <Route path="/procedimiento-para-tratamiento-de-quejas-y-sugerencias-fcpc">
+              <Route path="/procedimiento-para-tratamiento-de-quejas-y-sugerencias-fcpc-32">
                 <ProcedimientoParaQuejas />
               </Route>
 
               <Route path="/manual-circular">
                 <ManualCircular />
+              </Route>
+
+              <Route path="/manuales">
+                <Manuales />
               </Route>
 
               <Route path="*">

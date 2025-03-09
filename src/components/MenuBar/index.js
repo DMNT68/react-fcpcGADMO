@@ -89,53 +89,126 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
       <Menu.Item key="6">
         <Link to="/contacto">Contacto</Link>
       </Menu.Item>
-      <Menu.Item key="7">
-        <Link to="/gestionperiodo2015-2021">Gestión administración biess periodo 2015 - 2021</Link>
-      </Menu.Item>
 
       <Menu.SubMenu key="SubmenuMas" title="Más">
-        <Menu.Item key="Mas:1">
-          <Link to="/ley-orgánica-de-proteccion-de-datos-personales">
-            Cumplimiento a la ley orgánica de protección de datos personales.
-          </Link>
-        </Menu.Item>
+        <Menu.SubMenu key="Mas:8" title={'Convocatorias Asambleas 2025'}>
+          <Menu.SubMenu key="convocatoria-2025:1" title={'PRIMERA ASAMBLEA ORDINARIA 2025'}>
+            <Menu.Item key="convocatoria-2025:1.1">
+              <Link to="/convocatoria-primera-asamblea-2025">
+                Convocatoria a la primera asamblea general ordinaria de participes - 2025
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="punto6:1">
+              <Link to="/manuales">PUNTO 6 - Manuales</Link>
+            </Menu.Item>
+            {/* <Menu.SubMenu key="punto9" title={'PUNTO 6 - Manuales'}>
+              <Menu.Item key="punto6:1">
+                <Link to="/manual-de-inhabilidades-fcpc-68">Manual de inhabilidades</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:2">
+                <Link to="/manual-de-funciones-fcpc-68">Manual de funciones</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:3">
+                <Link to="/codigo-de-etica-fcpc-68">Código de Ética</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:4">
+                <Link to="/manual-de-viaticos-fcpc-68">Manual de viáticos</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:5">
+                <Link to="/manual-de-lavado-de-activos-fcpc-68">Manual de lavado de activos</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:6">
+                <Link to="/manual-de-registro-contable-fcpc-68">Manual de registro contable</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:7">
+                <Link to="/manual-de-registro-de-cuenta-individual-fcpc-68">
+                  Manual de registro de cuenta individual
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:8">
+                <Link to="/manual-de-inversiones-no-privativas-fcpc-68">
+                  Manual de invesiones no privativas
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:9">
+                <Link to="/manual-de-inversiones-privativas-fcpc-68">
+                  Manual de inversiones privativas
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:10">
+                <Link to="/manual-para-la-administracion-y-gestion-del-riesgo-fcpc-68">
+                  Manual para la administración y gestión del riesgo
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:11">
+                <Link to="/manual-de-prestaciones-fcpc-68">Manual de prestaciones</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:12">
+                <Link to="/manual-de-control-interno-fcpc-68">Manual de control interno</Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:13">
+                <Link to="/politica-de-actualizacion-de-normativa-fcpc-68">
+                  Politica de actualización de normativa
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:14">
+                <Link to="/manual-de-compra-venta-de-titulos-valores-fcpc-68">
+                  Manual de compra-venta de títulos de valores
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:15">
+                <Link to="/manual-de-calificacion-y-castigo-de-cartera-fcpc-68">
+                  Manual de calificación y castigo de cartera
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:16">
+                <Link to="/manual-de-administración-del-personal-del-fondo-fcpc-68">
+                  Manual de administración del personal del fondo
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:17">
+                <Link to="/manual-de-archivo-y-gestion-documental-fcpc-68">
+                  Manual de archivo y gestión documental
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:18">
+                <Link to="/politica-de-ejecucion-plan-estrategico-y-planificacion-operativa-anual-fcpc-68">
+                  Política de ejecución plan estrategico y planificación operativa anual
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:19">
+                <Link to="/manual-de-gestión-de-asambleas-fcpc-68">
+                  Manual de gestión de asambleas
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:20">
+                <Link to="/manual-de-tecnologias-incidencias-fcpc-681">
+                  Manual de tecnologias de incidencias
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:21">
+                <Link to="/manual-de-tecnologias-cambios-en-el-aplicativo-contable-fcpc-68">
+                  Manual de tecnologias cambios en el aplicativo contable
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:22">
+                <Link to="/manual-de-tecnologias-generacion-de-respaldos-fcpc-68">
+                  Manual de tecnologias generación de respaldos
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="punto6:23">
+                <Link to="/procedimiento-para-tratamiento-de-quejas-y-sugerencias-fcpc">
+                  Procedimiento para tratamiento de quejas y sugerencias
+                </Link>
+              </Menu.Item>
+            </Menu.SubMenu> */}
 
-        <Menu.Item key="Mas:2">
-          <Link to="/quejas-y-sugerencias">Quejas y sugerencias.</Link>
-        </Menu.Item>
-        <Menu.Item key="Mas:BuzonDeQuejas">
-          <Link to="/buzon-de-quejas">Buzón de quejas y sugerencias</Link>
-        </Menu.Item>
-        <Menu.Item key="Mas:3">
-          <Link to="/proceso-de-concurso-de-meritos-y-oposicion">
-            Proceso de concurso de meritos y oposición.
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="Mas:4">
-          <Link to="/normas-para-calificacion">
-            Normas para la calificación de representante legal del FCPC GADMO EMAPAO.
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="Mas:5">
-          <Link to="/encuesta-de-educación-financiera">Encuesta de educación financiera</Link>
-        </Menu.Item>
-
-        <Menu.SubMenu key="Mas:6" title={'Convocatorias Asambleas 2023'}>
-          <Menu.Item key="convocatoria-2023:1">
-            <Link to="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo">
-              Convocatoria a la primera asamblea general ordinaria de participes - 2023.
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="convocatoria-2023:2">
-            <Link to="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023">
-              Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="convocatoria-2023:3">
-            <Link to="/convocatoria-tercera-asamblea-2023">
-              Convocatoria tercera asamblea extraordinaria 2023
-            </Link>
-          </Menu.Item>
+            <Menu.Item key="punto9:1:2025">
+              <Link to="/manual-circular">
+                PUNTO 7 - Manual Circular Nro. BIESS-CFCO-2025-0004-C
+              </Link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
 
         <Menu.SubMenu key="Mas:" title={'Convocatorias Asambleas 2024'}>
@@ -286,122 +359,60 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
             </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
-        <Menu.SubMenu key="Mas:8" title={'Convocatorias Asambleas 2025'}>
-          <Menu.SubMenu key="convocatoria-2025:1" title={'PRIMERA ASAMBLEA ORDINARIA 2025'}>
-            <Menu.Item key="convocatoria-2025:1.1">
-              <Link to="/convocatoria-primera-asamblea-2025">
-                Convocatoria a la primera asamblea general ordinaria de participes - 2025
-              </Link>
-            </Menu.Item>
-            <Menu.SubMenu key="punto9" title={'PUNTO 6 - Manuales'}>
-              <Menu.Item key="punto6:1">
-                <Link to="/manual-de-inhabilidades-fcpc-68">Manual de inhabilidades</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:2">
-                <Link to="/manual-de-funciones-fcpc-68">Manual de funciones</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:3">
-                <Link to="/codigo-de-etica-fcpc-68">Código de Ética</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:4">
-                <Link to="/manual-de-viaticos-fcpc-68">Manual de viáticos</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:5">
-                <Link to="/manual-de-lavado-de-activos-fcpc-68">Manual de lavado de activos</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:6">
-                <Link to="/manual-de-registro-contable-fcpc-68">Manual de registro contable</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:7">
-                <Link to="/manual-de-registro-de-cuenta-individual-fcpc-68">
-                  Manual de registro de cuenta individual
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:8">
-                <Link to="/manual-de-inversiones-no-privativas-fcpc-68">
-                  Manual de invesiones no privativas
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:9">
-                <Link to="/manual-de-inversiones-privativas-fcpc-68">
-                  Manual de inversiones privativas
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:10">
-                <Link to="/manual-para-la-administracion-y-gestion-del-riesgo-fcpc-68">
-                  Manual para la administración y gestión del riesgo
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:11">
-                <Link to="/manual-de-prestaciones-fcpc-68">Manual de prestaciones</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:12">
-                <Link to="/manual-de-control-interno-fcpc-68">Manual de control interno</Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:13">
-                <Link to="/politica-de-actualizacion-de-normativa-fcpc-68">
-                  Politica de actualización de normativa
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:14">
-                <Link to="/manual-de-compra-venta-de-titulos-valores-fcpc-68">
-                  Manual de compra-venta de títulos de valores
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:15">
-                <Link to="/manual-de-calificacion-y-castigo-de-cartera-fcpc-68">
-                  Manual de calificación y castigo de cartera
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:16">
-                <Link to="/manual-de-administración-del-personal-del-fondo-fcpc-68">
-                  Manual de administración del personal del fondo
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:17">
-                <Link to="/manual-de-archivo-y-gestion-documental-fcpc-68">
-                  Manual de archivo y gestión documental
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:18">
-                <Link to="/politica-de-ejecucion-plan-estrategico-y-planificacion-operativa-anual-fcpc-68">
-                  Política de ejecución plan estrategico y planificación operativa anual
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:19">
-                <Link to="/manual-de-gestión-de-asambleas-fcpc-68">
-                  Manual de gestión de asambleas
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:20">
-                <Link to="/manual-de-tecnologias-incidencias-fcpc-681">
-                  Manual de tecnologias de incidencias
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:21">
-                <Link to="/manual-de-tecnologias-cambios-en-el-aplicativo-contable-fcpc-68">
-                  Manual de tecnologias cambios en el aplicativo contable
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:22">
-                <Link to="/manual-de-tecnologias-generacion-de-respaldos-fcpc-68">
-                  Manual de tecnologias generación de respaldos
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="punto6:23">
-                <Link to="/procedimiento-para-tratamiento-de-quejas-y-sugerencias-fcpc">
-                  Procedimiento para tratamiento de quejas y sugerencias
-                </Link>
-              </Menu.Item>
-            </Menu.SubMenu>
 
-            <Menu.Item key="punto9:1">
-              <Link to="/manual-circular">
-                PUNTO 7 - Manual Circular Nro. BIESS-CFCO-2025-0004-C
-              </Link>
-            </Menu.Item>
-          </Menu.SubMenu>
+        <Menu.SubMenu key="Mas:6" title={'Convocatorias Asambleas 2023'}>
+          <Menu.Item key="convocatoria-2023:1">
+            <Link to="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo">
+              Convocatoria a la primera asamblea general ordinaria de participes - 2023.
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="convocatoria-2023:2">
+            <Link to="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023">
+              Segunda asamblea general extraordinaria - 2023 - 03 de mayo 2023
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="convocatoria-2023:3">
+            <Link to="/convocatoria-tercera-asamblea-2023">
+              Convocatoria tercera asamblea extraordinaria 2023
+            </Link>
+          </Menu.Item>
         </Menu.SubMenu>
+
+        <Menu.Item key="7">
+          <Link to="/gestionperiodo2015-2021">
+            Gestión administración biess periodo 2015 - 2021
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="Mas:1">
+          <Link to="/ley-orgánica-de-proteccion-de-datos-personales">
+            Cumplimiento a la ley orgánica de protección de datos personales.
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="Mas:2">
+          <Link to="/quejas-y-sugerencias">Quejas y sugerencias.</Link>
+        </Menu.Item>
+
+        <Menu.Item key="Mas:BuzonDeQuejas">
+          <Link to="/buzon-de-quejas">Buzón de quejas y sugerencias</Link>
+        </Menu.Item>
+
+        <Menu.Item key="Mas:3">
+          <Link to="/proceso-de-concurso-de-meritos-y-oposicion">
+            Proceso de concurso de meritos y oposición.
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="Mas:4">
+          <Link to="/normas-para-calificacion">
+            Normas para la calificación de representante legal del FCPC GADMO EMAPAO.
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="Mas:5">
+          <Link to="/encuesta-de-educación-financiera">Encuesta de educación financiera</Link>
+        </Menu.Item>
       </Menu.SubMenu>
     </Menu>
   );
