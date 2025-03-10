@@ -8,8 +8,8 @@ import { Lines } from '../../../../components/Lines';
 
 export const ManualCircular = () => {
   const classes = useStyles();
-  const title = 'MANUAL CIRCULAR';
-  const nameFile = 'MANUAL-DE-CIRCULAR.pdf';
+  const title = 'METOLOGÍA DE RIESGO DE CRÉDITO';
+  const nameFile = '24-METODOLOGIA-DE-RIESGO-DE-CREDITO-FCPC-32.pdf';
   const url = `${URL_FONDO}/files/asamblea-2025/primera/${nameFile}`;
   return (
     <>
