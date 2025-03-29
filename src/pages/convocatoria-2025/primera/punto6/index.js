@@ -68,7 +68,7 @@ const manuales = [
   {
     icon: <ArrowRightIcon color="primary" />,
     path: '/manual-de-inversiones-privativas-fcpc-32',
-    name: 'Manual-de inversiones privativas',
+    name: 'Manual de inversiones privativas',
     more: [],
   },
   {
