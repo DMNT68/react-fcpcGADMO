@@ -139,6 +139,8 @@ import { ManualDeTecnologiasGeneracionDeRespaldos2 } from '../pages/convocatoria
 import { ProcedimientoParaQuejas2 } from '../pages/convocatoria-2025/segunda/punto6/ProcedimientoParaQuejas2';
 import { ManualCircular2 } from '../pages/convocatoria-2025/segunda/punto6/ManualCircular2';
 import { Manuales2 } from '../pages/convocatoria-2025/segunda/punto6';
+import { ConvocatoriaTerceraAsamblea2025 } from '../pages/convocatoria-2025/tercera/ConvocatoriaTerceraAsamblea2025';
+import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/ManualPrestraciones2025';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -931,6 +933,27 @@ export const Responsive = () => {
 				},
 			],
 		},
+
+		{
+			icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
+			path: '/convocatoria-tercera-asamblea-2025',
+			name: 'Convocatoria tercera asamblea ordinaria 2025',
+			more: [
+				{
+					icon: <ArrowRightIcon color="primary" />,
+					path: '/convocatoria-tercera-asamblea-2025',
+					name: 'Convocatoria tercera asamblea ordinaria 2025',
+					more: [
+						{
+							icon: <ArrowRightIcon color="primary" />,
+							path: 'tercera-asamblea/manual-prestaciones',
+							name: 'Manual de prestaciones',
+							more: [],
+						},
+					],
+				}
+			],
+		},
 	];
 
 	const drawer = (
@@ -1405,6 +1428,15 @@ export const Responsive = () => {
 
 						<Route path="/segunda-asamblea/manuales">
 							<Manuales2 />
+						</Route>
+
+						{/* Tercera convocatoria 2025 */}
+						<Route path="/convocatoria-tercera-asamblea-2025">
+							<ConvocatoriaTerceraAsamblea2025 />
+						</Route>
+
+						<Route path="/tercera-asamblea/manual-prestaciones">
+							<ManuualPrestaciones2025 />
 						</Route>
 
 						<Route path="*">

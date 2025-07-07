@@ -120,6 +120,8 @@ import { ManualDeTecnologiasGeneracionDeRespaldos2 } from '../pages/convocatoria
 import { ProcedimientoParaQuejas2 } from '../pages/convocatoria-2025/segunda/punto6/ProcedimientoParaQuejas2';
 import { ManualCircular2 } from '../pages/convocatoria-2025/segunda/punto6/ManualCircular2';
 import { Manuales2 } from '../pages/convocatoria-2025/segunda/punto6';
+import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/ManualPrestraciones2025';
+import { ConvocatoriaTerceraAsamblea2025 } from '../pages/convocatoria-2025/tercera/ConvocatoriaTerceraAsamblea2025';
 
 export const Desktop = ({ paginaActive, setPaginaActive }) => {
 	const classes = useStyles();
@@ -515,6 +517,15 @@ export const Desktop = ({ paginaActive, setPaginaActive }) => {
 
 							<Route path="/segunda-asamblea/manuales">
 								<Manuales2 />
+							</Route>
+
+							{/* Tercera convocatoria 2025 */}
+							<Route path="/convocatoria-tercera-asamblea-2025">
+								<ConvocatoriaTerceraAsamblea2025 />
+							</Route>
+
+							<Route path="/tercera-asamblea/manual-prestaciones">
+								<ManuualPrestaciones2025 />
 							</Route>
 
 							<Route path="*">

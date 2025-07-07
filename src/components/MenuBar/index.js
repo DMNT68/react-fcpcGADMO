@@ -124,6 +124,16 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
 							</Link>
 						</Menu.Item>
 					</Menu.SubMenu>
+					<Menu.SubMenu key="convocatoria-2025:3" title={'TERCERA ASAMBLEA EXTRAORDINARIA 2025'}>
+						<Menu.Item key="convocatoria-2025:3.1">
+							<Link to="/convocatoria-tercera-asamblea-2025">
+								Convocatoria a la tercera asamblea extraordinaria - 2025
+							</Link>
+						</Menu.Item>
+						<Menu.Item key="convocatoria-2025:3.2">
+							<Link to="tercera-asamblea/manual-prestaciones">Manual de prestaciones</Link>
+						</Menu.Item>
+					</Menu.SubMenu>
 				</Menu.SubMenu>
 
 				<Menu.SubMenu key="Mas:" title={'Convocatorias Asambleas 2024'}>
