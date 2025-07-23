@@ -141,6 +141,7 @@ import { ManualCircular2 } from '../pages/convocatoria-2025/segunda/punto6/Manua
 import { Manuales2 } from '../pages/convocatoria-2025/segunda/punto6';
 import { ConvocatoriaTerceraAsamblea2025 } from '../pages/convocatoria-2025/tercera/ConvocatoriaTerceraAsamblea2025';
 import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/ManualPrestraciones2025';
+import { PoliticasDeInversion } from '../pages/PoliticasDeInversion';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -210,11 +211,8 @@ export const Responsive = () => {
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 	const [selectedIndex, setSelectedIndex] = useState('Inicio');
 
-	const [paginaActive, setPaginaActive] = useState(0);
-
 	const handleDrawerToggle = () => {
 		setMobileOpen(!mobileOpen);
-		console.log(paginaActive);
 	};
 	const handleListItemClick = (event, name) => {
 		setSelectedIndex(name);
@@ -372,7 +370,12 @@ export const Responsive = () => {
 			name: 'Encuesta de educación financiera',
 			more: [],
 		},
-
+		{
+			icon: <PlaylistAddCheckOutlinedIcon color="primary" fontSize="small" />,
+			path: '/politicas-de-inversion-privativas',
+			name: 'Políticas de Inversión Privativas',
+			more: [],
+		},
 		{
 			icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
 			path: '/convocatoria-tercera-asamblea-2023',
@@ -398,7 +401,6 @@ export const Responsive = () => {
 				},
 			],
 		},
-
 		{
 			icon: <PlaylistAddCheckOutlinedIcon color="primary" />,
 			path: '/convocatoria-primera-asamblea-2024',
@@ -426,18 +428,12 @@ export const Responsive = () => {
 
 				{
 					icon: <ArrowRightIcon color="primary" />,
-					path: '/convocatoria-primera-asamblea-2023',
+					path: '/resolucion-nro-sb-2023-02208',
 					name: 'PUNTO 10 - RESOLUCIÓN SB-2023-02208',
 					more: [
 						{
 							icon: <ArrowRightIcon color="primary" />,
 							path: '/resolucion-nro-sb-2023-02208',
-							name: 'Resolución',
-							more: [],
-						},
-						{
-							icon: <ArrowRightIcon color="primary" />,
-							path: '/resolucion-nro-sb-2023-022olucion-nro-sb-2023-02208',
 							name: 'Resolución',
 							more: [],
 						},
@@ -951,7 +947,7 @@ export const Responsive = () => {
 							more: [],
 						},
 					],
-				}
+				},
 			],
 		},
 	];
@@ -1060,96 +1056,96 @@ export const Responsive = () => {
 					<div className={classes.toolbar} />
 					<Switch>
 						<Route path="/" exact={true}>
-							<Home setPaginaActive={setPaginaActive} />
+							<Home />
 						</Route>
 						<Route path="/institucion" exact={true}>
-							<Institution setPaginaActive={setPaginaActive} />
+							<Institution />
 						</Route>
 						<Route path="/codigoEtica" exact={true}>
-							<Ethics setPaginaActive={setPaginaActive} />
+							<Ethics />
 						</Route>
 						<Route path="/educacionFinanciera" exact={true}>
-							<Education setPaginaActive={setPaginaActive} />
+							<Education />
 						</Route>
 						<Route path="/introduccion" exact={true}>
-							<Introduction setPaginaActive={setPaginaActive} />
+							<Introduction />
 						</Route>
 						<Route path="/conceptosJustificación" exact={true}>
-							<ConceptosJustificacion setPaginaActive={setPaginaActive} />
+							<ConceptosJustificacion />
 						</Route>
 						<Route path="/disposionesPreliminares" exact={true}>
-							<DisposionesPreliminares setPaginaActive={setPaginaActive} />
+							<DisposionesPreliminares />
 						</Route>
 						<Route path="/normas" exact={true}>
-							<Normas setPaginaActive={setPaginaActive} />
+							<Normas />
 						</Route>
 						<Route path="/prohibicion" exact={true}>
-							<Prohibicion setPaginaActive={setPaginaActive} />
+							<Prohibicion />
 						</Route>
 						<Route path="/conflictos" exact={true}>
-							<Conflictos setPaginaActive={setPaginaActive} />
+							<Conflictos />
 						</Route>
 						<Route path="/actividadesPoliticas" exact={true}>
-							<ActividadesPoliticas setPaginaActive={setPaginaActive} />
+							<ActividadesPoliticas />
 						</Route>
 						<Route path="/medioAmbiente" exact={true}>
-							<MedioAmbiente setPaginaActive={setPaginaActive} />
+							<MedioAmbiente />
 						</Route>
 						<Route path="/comiteEtica" exact={true}>
-							<ComiteEtica setPaginaActive={setPaginaActive} />
+							<ComiteEtica />
 						</Route>
 						<Route path="/cumplimiento" exact={true}>
-							<Cumplimiento setPaginaActive={setPaginaActive} />
+							<Cumplimiento />
 						</Route>
 						<Route path="/medidasDisciplinarias" exact={true}>
-							<MedidasDisciplinarias setPaginaActive={setPaginaActive} />
+							<MedidasDisciplinarias />
 						</Route>
 						<Route path="/accesoPoliticas" exact={true}>
-							<AccesoPoliticas setPaginaActive={setPaginaActive} />
+							<AccesoPoliticas />
 						</Route>
 						<Route path="/planificacionEstrategica" exact={true}>
-							<Planificacion setPaginaActive={setPaginaActive} />
+							<Planificacion />
 						</Route>
 						<Route path="/personal" exact={true}>
-							<Personal setPaginaActive={setPaginaActive} />
+							<Personal />
 						</Route>
 
 						<Route path="/contacto" exact={true}>
-							<Contact setPaginaActive={setPaginaActive} />
+							<Contact />
 						</Route>
 
 						<Route path="/gestionperiodo2015-2021" exact={true}>
-							<Gestion setPaginaActive={setPaginaActive} />
+							<Gestion />
 						</Route>
 						<Route path="/ley-orgánica-de-proteccion-de-datos-personales" exact={true}>
-							<Ley setPaginaActive={setPaginaActive} />
+							<Ley />
 						</Route>
 						<Route path="/anexo1" exact={true}>
-							<Anexo1 setPaginaActive={setPaginaActive} />
+							<Anexo1 />
 						</Route>
 						<Route path="/quejas-y-sugerencias" exact={true}>
-							<Quejas setPaginaActive={setPaginaActive} />
+							<Quejas />
 						</Route>
 						<Route path="/buzon-de-quejas" exact={true}>
 							<BuzonQuejas />
 						</Route>
 						<Route path="/proceso-de-concurso-de-meritos-y-oposicion" exact={true}>
-							<Bases setPaginaActive={setPaginaActive} />
+							<Bases />
 						</Route>
 						<Route path="/normas-para-calificacion" exact={true}>
-							<NormasCalificacion setPaginaActive={setPaginaActive} />
+							<NormasCalificacion />
 						</Route>
 						<Route
 							path="/convocatoria-primera-asamblea-general-ordinaria-2023-fcpc-gadmo"
 							exact={true}
 						>
-							<ConvocatoriaAsamblea setPaginaActive={setPaginaActive} />
+							<ConvocatoriaAsamblea />
 						</Route>
 						<Route
 							path="/segunda-asamblea-general-extraordinaria-2023-03-de-mayo-2023"
 							exact={true}
 						>
-							<ConvocatoriaAsamblea2 setPaginaActive={setPaginaActive} />
+							<ConvocatoriaAsamblea2 />
 						</Route>
 						<Route path="/encuesta-de-educación-financiera" exact={true}>
 							<Encuesta />
@@ -1437,6 +1433,10 @@ export const Responsive = () => {
 
 						<Route path="/tercera-asamblea/manual-prestaciones">
 							<ManuualPrestaciones2025 />
+						</Route>
+
+						<Route path="/politicas-de-inversion-privativas">
+							<PoliticasDeInversion />
 						</Route>
 
 						<Route path="*">

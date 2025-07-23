@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import './MenuBar.css';
 
-export const MenuBar = ({ paginaActive, setPaginaActive }) => {
+export const MenuBar = () => {
 	const subMenuCodigo = [
 		// { icon: '', path: '/codigoEtica', name: 'Código y Buen Gobierno' },
 		{
@@ -36,16 +36,11 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
 		},
 	];
 
-	const handleClick = (e) => {
-		setPaginaActive(e.key);
-	};
-
 	return (
 		<Menu
-			onClick={handleClick}
 			theme="light"
 			mode="horizontal"
-			defaultSelectedKeys={[paginaActive]}
+			defaultSelectedKeys={['1']}
 			className="menu"
 		>
 			<Menu.Item key="1">
@@ -91,6 +86,9 @@ export const MenuBar = ({ paginaActive, setPaginaActive }) => {
 			</Menu.Item>
 
 			<Menu.SubMenu key="SubmenuMas" title="Más">
+				<Menu.Item key="Mas:9">
+					<Link to="/politicas-de-inversion-privativas">Politicas de Inversion Privativas</Link>
+				</Menu.Item>
 				<Menu.SubMenu key="Mas:8" title={'Convocatorias Asambleas 2025'}>
 					<Menu.SubMenu key="convocatoria-2025:1" title={'PRIMERA ASAMBLEA ORDINARIA 2025'}>
 						<Menu.Item key="convocatoria-2025:1.1">

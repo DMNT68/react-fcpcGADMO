@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Grow, makeStyles, Typography, Grid, Paper } from '@material-ui/core';
 import { Lines } from '../components/Lines';
 import '../App.css';
 import { Helmet } from 'react-helmet';
 
-export const Personal = ({ setPaginaActive }) => {
+export const Personal = () => {
   const classes = useStyles();
-  useEffect(() => {
-    setPaginaActive(1);
-  }, [setPaginaActive]);
+ 
   return (
     <>
       <Helmet>

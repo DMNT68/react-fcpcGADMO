@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Container, Grid, makeStyles, TextField, Button, Backdrop, CircularProgress, Grow } from '@material-ui/core';
 import LocationOnRoundedIcon from '@material-ui/icons/LocationOnRounded';
@@ -20,7 +20,7 @@ const initForm = {
   mensaje: '',
 };
 
-export const Contact = ({ setPaginaActive }) => {
+export const Contact = () => {
   const classes = useStyles();
   const { enqueueSnackbar } = useSnackbar();
   const [open, setOpen] = useState(false);
@@ -35,9 +35,6 @@ export const Contact = ({ setPaginaActive }) => {
     accessToken: 'pk.eyJ1IjoiYW5kcmVzc2FsZ2Fkb2MxIiwiYSI6ImNrMXRyN2c2bDAxZHUzb3FmcmRpdWIwdDIifQ.uT9V4dExJjvVNRWPQaZT_Q',
   });
 
-  useEffect(() => {
-    setPaginaActive(1);
-  }, [setPaginaActive]);
 
   const onChange = (e) => {
     setForm({

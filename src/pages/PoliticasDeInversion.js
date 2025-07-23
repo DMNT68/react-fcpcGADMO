@@ -4,59 +4,63 @@ import { Container, makeStyles, Grow, Hidden } from '@material-ui/core';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
+import { ABREVIACION_FONDO, URL_FONDO } from '../constants/constants';
 
-export const Gestion = () => {
+export const PoliticasDeInversion = () => {
 	const classes = useStyles();
-
+	const title = 'POLÍTICA DE INVERSIONES PRIVATIVAS FCPC BIESS ';
+	const nameFile1 = 'BIESS-CFCO-2025-0018-C.pdf';
+	const nameFile2 = 'POLITI_1.pdf';
+	const url1 = `${URL_FONDO}/files/${nameFile1}`;
+	const url2 = `${URL_FONDO}/files/${nameFile2}`;
 	return (
 		<>
 			<Helmet>
-				<title>Gestión Periodo 2015 - 2021 | fcpcGADMO</title>
+				<title>
+					{title} | {ABREVIACION_FONDO}
+				</title>
 			</Helmet>
 			<Container maxWidth="md" id="contacto">
 				<Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 800 } : {})}>
 					<Typography variant="h4" color="initial" align="center" className={classes.title}>
-						GESTIÓN ADMINISTRACIÓN BIESS PERIODO 2015 - 2021
+						{title}
 					</Typography>
 				</Grow>
 				<Lines height={3} />
-				<div className={classes.marginTopBottomx4}>
-					<Typography
-						variant="body1"
-						color="initial"
-						component="p"
-						align="justify"
-						className={classes.parragraph}
-					>
-						En estricto cumplimiento a lo dispuesto en la Resolución No. JPRF-F-2021-005, artículo
-						192 y 193 - SUBSECCIÓN VII “DE LAS OBLIGACIONES DEL BIESS EN EL PROCESO DE TRANSICIÓN A
-						LOS PARTÍCIPES, se presenta el INFORME DE GESTION DURANTE LA ADMINISTRACIÓN BIESS en el
-						periodo 2015 - 2021, mismo que fue Conocido, Resuelto y Aprobado en la Primera Asamblea
-						Ordinaria de Partícipes del FCPC GADMO, llevada a efecto el día 03 de febrero del 2022 a
-						las 18:00.
-					</Typography>
-				</div>
+				<div className={classes.marginTopBottomx4}></div>
 				<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 					<Hidden only={['xs']}>
-						<iframe
-							title="pdf"
-							src="https://firebasestorage.googleapis.com/v0/b/tiempos-601b6.appspot.com/o/fcpc%2F7.INFORMEDEGESTIONBIESS2015-2021-FCPCGADMOPARAPAGINAWEB.pdf?alt=media&token=7041ae86-a11b-4c49-b24a-63e29d3e8cf5"
-							width="100%"
-							height="500px"
-						></iframe>
+						<iframe title="pdf" src={`${url1}#toolbar=0`} width="100%" height="500px"></iframe>
 					</Hidden>
 					<Hidden only={['md', 'xl', 'lg', 'sm']}>
-						<p>
-							Abrir PDF
-							<a
-								rel="noreferrer"
-								href="https://firebasestorage.googleapis.com/v0/b/tiempos-601b6.appspot.com/o/fcpc%2F7.INFORMEDEGESTIONBIESS2015-2021-FCPCGADMOPARAPAGINAWEB.pdf?alt=media&token=7041ae86-a11b-4c49-b24a-63e29d3e8cf5"
-								target="_blank"
-							>
-								aquí
-							</a>
-							.
-						</p>
+						<div>
+							<p>
+								Abrir PDF &nbsp;
+								<a rel="noreferrer" href={url2} target="_blank">
+									aquí
+								</a>
+								.
+							</p>
+						</div>
+						{/* <div style={{ height: '100vh' }}></div> */}
+					</Hidden>
+				</div>
+				<div className={classes.marginTopBottomx4}></div>
+				<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+					<Hidden only={['xs']}>
+						<iframe title="pdf" src={`${url2}#toolbar=0`} width="100%" height="500px"></iframe>
+					</Hidden>
+					<Hidden only={['md', 'xl', 'lg', 'sm']}>
+						<div>
+							<p>
+								Abrir PDF &nbsp;
+								<a rel="noreferrer" href={url2} target="_blank">
+									aquí
+								</a>
+								.
+							</p>
+						</div>
+						{/* <div style={{ height: '100vh' }}></div> */}
 					</Hidden>
 				</div>
 			</Container>
