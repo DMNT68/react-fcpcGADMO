@@ -12,7 +12,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
 
-export const Education = ({ setPaginaActive }) => {
+export const Education = () => {
   const classes = useStyles();
 
   return (

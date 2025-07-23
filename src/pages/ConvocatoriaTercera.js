@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
 
-export const ConvocatoriaTercera = ({ setPaginaActive }) => {
+export const ConvocatoriaTercera = () => {
   const classes = useStyles();
   const fileName = 'CONVOCATORIA-ASAMBLEA-FCPC-GADMO-21-DE-AGOSTO-2023.pdf';
   const url = `https://fcpcgadmo.com.ec/files/${fileName}`;

@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
 
-export const Anexo1 = ({ setPaginaActive }) => {
+export const Anexo1 = () => {
   const classes = useStyles();
 
   return (

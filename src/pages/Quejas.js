@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
 
-export const Quejas = ({ setPaginaActive }) => {
+export const Quejas = () => {
   const classes = useStyles();
 
   return (
