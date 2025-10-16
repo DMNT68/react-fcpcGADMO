@@ -142,6 +142,7 @@ import { Manuales2 } from '../pages/convocatoria-2025/segunda/punto6';
 import { ConvocatoriaTerceraAsamblea2025 } from '../pages/convocatoria-2025/tercera/ConvocatoriaTerceraAsamblea2025';
 import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/ManualPrestraciones2025';
 import { PoliticasDeInversion } from '../pages/PoliticasDeInversion';
+import { ConvocatoriaCuartaAsamblea2025 } from '../pages/convocatoria-2025/cuarta/ConvocatoriaCuartaAsamblea2025';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -950,6 +951,12 @@ export const Responsive = () => {
 				},
 			],
 		},
+		{
+			icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
+			path: '/convocatoria-cuarta-asamblea-2025',
+			name: 'Convocatoria asamblea extraordinaria 28 de octubre de 2025',
+			more: [],
+		},
 	];
 
 	const drawer = (
@@ -1437,6 +1444,12 @@ export const Responsive = () => {
 
 						<Route path="/politicas-de-inversion-privativas">
 							<PoliticasDeInversion />
+						</Route>
+
+						{/* Cuarta convocatoria 2025 */}
+
+						<Route path="/convocatoria-cuarta-asamblea-2025">
+							<ConvocatoriaCuartaAsamblea2025 />
 						</Route>
 
 						<Route path="*">

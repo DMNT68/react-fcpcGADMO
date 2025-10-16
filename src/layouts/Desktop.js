@@ -123,6 +123,7 @@ import { Manuales2 } from '../pages/convocatoria-2025/segunda/punto6';
 import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/ManualPrestraciones2025';
 import { ConvocatoriaTerceraAsamblea2025 } from '../pages/convocatoria-2025/tercera/ConvocatoriaTerceraAsamblea2025';
 import { PoliticasDeInversion } from '../pages/PoliticasDeInversion';
+import { ConvocatoriaCuartaAsamblea2025 } from '../pages/convocatoria-2025/cuarta/ConvocatoriaCuartaAsamblea2025';
 
 export const Desktop = () => {
 	const classes = useStyles();
@@ -530,6 +531,12 @@ export const Desktop = () => {
 
 							<Route path="/politicas-de-inversion-privativas">
 								<PoliticasDeInversion />
+							</Route>
+
+							{/* Cuarta convocatoria 2025 */}
+
+							<Route path="/convocatoria-cuarta-asamblea-2025">
+								<ConvocatoriaCuartaAsamblea2025 />
 							</Route>
 
 							<Route path="*">

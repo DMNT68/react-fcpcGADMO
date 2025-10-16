@@ -37,12 +37,7 @@ export const MenuBar = () => {
 	];
 
 	return (
-		<Menu
-			theme="light"
-			mode="horizontal"
-			defaultSelectedKeys={['1']}
-			className="menu"
-		>
+		<Menu theme="light" mode="horizontal" defaultSelectedKeys={['1']} className="menu">
 			<Menu.Item key="1">
 				<Link to="/">Inicio</Link>
 			</Menu.Item>
@@ -132,6 +127,11 @@ export const MenuBar = () => {
 							<Link to="tercera-asamblea/manual-prestaciones">Manual de prestaciones</Link>
 						</Menu.Item>
 					</Menu.SubMenu>
+					<Menu.Item key="convocatoria-2025:4" title={'ASAMBLEA EXTRAORDINARIA 28 de octubre 2025'}>
+						<Link to="/convocatoria-cuarta-asamblea-2025">
+							ASAMBLEA EXTRAORDINARIA 28 de octubre 2025
+						</Link>
+					</Menu.Item>
 				</Menu.SubMenu>
 
 				<Menu.SubMenu key="Mas:" title={'Convocatorias Asambleas 2024'}>
