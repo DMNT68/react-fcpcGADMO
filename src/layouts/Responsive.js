@@ -143,6 +143,7 @@ import { ConvocatoriaTerceraAsamblea2025 } from '../pages/convocatoria-2025/terc
 import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/ManualPrestraciones2025';
 import { PoliticasDeInversion } from '../pages/PoliticasDeInversion';
 import { ConvocatoriaCuartaAsamblea2025 } from '../pages/convocatoria-2025/cuarta/ConvocatoriaCuartaAsamblea2025';
+import { ConvocatoriaQuintaAsamblea2025 } from '../pages/convocatoria-2025/quinta/ConvocatoriaQuintaAsamblea2025';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -954,7 +955,13 @@ export const Responsive = () => {
 		{
 			icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
 			path: '/convocatoria-cuarta-asamblea-2025',
-			name: 'Convocatoria asamblea extraordinaria 28 de octubre de 2025',
+			name: 'Convocatoria cuarta asamblea extraordinaria',
+			more: [],
+		},
+		{
+			icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
+			path: '/convocatoria-quinta-asamblea-2025',
+			name: 'Convocatoria quinta asamblea extraordinaria',
 			more: [],
 		},
 	];
@@ -1450,6 +1457,12 @@ export const Responsive = () => {
 
 						<Route path="/convocatoria-cuarta-asamblea-2025">
 							<ConvocatoriaCuartaAsamblea2025 />
+						</Route>
+
+						{/* Quinta convocatoria 2025 */}
+
+						<Route path="/convocatoria-quinta-asamblea-2025">
+							<ConvocatoriaQuintaAsamblea2025 />
 						</Route>
 
 						<Route path="*">

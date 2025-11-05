@@ -127,10 +127,11 @@ export const MenuBar = () => {
 							<Link to="tercera-asamblea/manual-prestaciones">Manual de prestaciones</Link>
 						</Menu.Item>
 					</Menu.SubMenu>
-					<Menu.Item key="convocatoria-2025:4" title={'ASAMBLEA EXTRAORDINARIA 28 de octubre 2025'}>
-						<Link to="/convocatoria-cuarta-asamblea-2025">
-							ASAMBLEA EXTRAORDINARIA 28 de octubre 2025
-						</Link>
+					<Menu.Item key="convocatoria-2025:4" title={'CUARTA ASAMBLEA EXTRAORDINARIA 2025'}>
+						<Link to="/convocatoria-cuarta-asamblea-2025">CUARTA ASAMBLEA EXTRAORDINARIA 2025</Link>
+					</Menu.Item>
+					<Menu.Item key="convocatoria-2025:5" title={'QUINTA ASAMBLEA EXTRAORDINARIA 2025'}>
+						<Link to="/convocatoria-quinta-asamblea-2025">QUINTA ASAMBLEA EXTRAORDINARIA 2025</Link>
 					</Menu.Item>
 				</Menu.SubMenu>
 

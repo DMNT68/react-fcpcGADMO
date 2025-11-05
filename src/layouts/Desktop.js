@@ -124,6 +124,7 @@ import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/Manu
 import { ConvocatoriaTerceraAsamblea2025 } from '../pages/convocatoria-2025/tercera/ConvocatoriaTerceraAsamblea2025';
 import { PoliticasDeInversion } from '../pages/PoliticasDeInversion';
 import { ConvocatoriaCuartaAsamblea2025 } from '../pages/convocatoria-2025/cuarta/ConvocatoriaCuartaAsamblea2025';
+import { ConvocatoriaQuintaAsamblea2025 } from '../pages/convocatoria-2025/quinta/ConvocatoriaQuintaAsamblea2025';
 
 export const Desktop = () => {
 	const classes = useStyles();
@@ -537,6 +538,12 @@ export const Desktop = () => {
 
 							<Route path="/convocatoria-cuarta-asamblea-2025">
 								<ConvocatoriaCuartaAsamblea2025 />
+							</Route>
+
+							{/* Quinta convocatoria 2025 */}
+
+							<Route path="/convocatoria-quinta-asamblea-2025">
+								<ConvocatoriaQuintaAsamblea2025 />
 							</Route>
 
 							<Route path="*">
