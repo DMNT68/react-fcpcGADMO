@@ -144,6 +144,7 @@ import { ManuualPrestaciones2025 } from '../pages/convocatoria-2025/tercera/Manu
 import { PoliticasDeInversion } from '../pages/PoliticasDeInversion';
 import { ConvocatoriaCuartaAsamblea2025 } from '../pages/convocatoria-2025/cuarta/ConvocatoriaCuartaAsamblea2025';
 import { ConvocatoriaQuintaAsamblea2025 } from '../pages/convocatoria-2025/quinta/ConvocatoriaQuintaAsamblea2025';
+import { ConvocatoriaPrimeraAsamblea2026 } from '../pages/convocatoria-2026/primera/ConvocatoriaPrimeraAsamblea2026';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -964,6 +965,12 @@ export const Responsive = () => {
 			name: 'Convocatoria quinta asamblea extraordinaria',
 			more: [],
 		},
+		{
+			icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
+			path: '/convocatoria-primera-asamblea-2026',
+			name: 'Primera Convocatoria asamblea ordinaria 2026',
+			more: [],
+		},
 	];
 
 	const drawer = (
@@ -1463,6 +1470,12 @@ export const Responsive = () => {
 
 						<Route path="/convocatoria-quinta-asamblea-2025">
 							<ConvocatoriaQuintaAsamblea2025 />
+						</Route>
+
+						{/* primera convocatoria 2026 */}
+
+						<Route path="/convocatoria-primera-asamblea-2026">
+							<ConvocatoriaPrimeraAsamblea2026 />
 						</Route>
 
 						<Route path="*">

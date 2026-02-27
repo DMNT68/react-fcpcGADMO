@@ -84,6 +84,11 @@ export const MenuBar = () => {
 				<Menu.Item key="Mas:9">
 					<Link to="/politicas-de-inversion-privativas">Politicas de Inversion Privativas</Link>
 				</Menu.Item>
+				<Menu.SubMenu key="Mas:7" title={'Convocatorias Asambleas 2026'}>
+					<Menu.Item key="convocatoria-2026:1" title={'PRIMERA ASAMBLEA ORDINARIA'}>
+						<Link to="/convocatoria-primera-asamblea-2026">PRIMERA ASAMBLEA ORDINARIA</Link>
+					</Menu.Item>
+				</Menu.SubMenu>
 				<Menu.SubMenu key="Mas:8" title={'Convocatorias Asambleas 2025'}>
 					<Menu.SubMenu key="convocatoria-2025:1" title={'PRIMERA ASAMBLEA ORDINARIA 2025'}>
 						<Menu.Item key="convocatoria-2025:1.1">
