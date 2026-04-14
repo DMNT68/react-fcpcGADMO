@@ -4,19 +4,25 @@ import { Container, makeStyles, Grow, Hidden } from '@material-ui/core';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { Lines } from '../components/Lines';
 import { Helmet } from 'react-helmet';
+import { ABREVIACION_FONDO, URL_FONDO } from '../constants/constants';
 
 export const Gestion = () => {
 	const classes = useStyles();
+	const title = 'GESTIÓN ADMINISTRACIÓN BIESS PERIODO 2015 - 2021';
+	const nameFile = '7.INFORMEDEGESTIONBIESS2015-2021-FCPCGADMOPARAPAGINAWEB.pdf';
+	const url = `${URL_FONDO}/files/${nameFile}`;
 
 	return (
 		<>
 			<Helmet>
-				<title>Gestión Periodo 2015 - 2021 | fcpcGADMO</title>
+				<title>
+					{title} | {ABREVIACION_FONDO}
+				</title>
 			</Helmet>
 			<Container maxWidth="md" id="contacto">
 				<Grow in={true} style={{ transformOrigin: '0 0 0' }} {...(true ? { timeout: 800 } : {})}>
 					<Typography variant="h4" color="initial" align="center" className={classes.title}>
-						GESTIÓN ADMINISTRACIÓN BIESS PERIODO 2015 - 2021
+						{title}
 					</Typography>
 				</Grow>
 				<Lines height={3} />
@@ -38,21 +44,12 @@ export const Gestion = () => {
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 					<Hidden only={['xs']}>
-						<iframe
-							title="pdf"
-							src="https://firebasestorage.googleapis.com/v0/b/tiempos-601b6.appspot.com/o/fcpc%2F7.INFORMEDEGESTIONBIESS2015-2021-FCPCGADMOPARAPAGINAWEB.pdf?alt=media&token=7041ae86-a11b-4c49-b24a-63e29d3e8cf5"
-							width="100%"
-							height="500px"
-						></iframe>
+						<iframe title="pdf" src={url} width="100%" height="500px"></iframe>
 					</Hidden>
 					<Hidden only={['md', 'xl', 'lg', 'sm']}>
 						<p>
 							Abrir PDF
-							<a
-								rel="noreferrer"
-								href="https://firebasestorage.googleapis.com/v0/b/tiempos-601b6.appspot.com/o/fcpc%2F7.INFORMEDEGESTIONBIESS2015-2021-FCPCGADMOPARAPAGINAWEB.pdf?alt=media&token=7041ae86-a11b-4c49-b24a-63e29d3e8cf5"
-								target="_blank"
-							>
+							<a rel="noreferrer" href={url} target="_blank">
 								aquí
 							</a>
 							.
