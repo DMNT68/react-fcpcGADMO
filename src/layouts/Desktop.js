@@ -126,6 +126,7 @@ import { PoliticasDeInversion } from '../pages/PoliticasDeInversion';
 import { ConvocatoriaCuartaAsamblea2025 } from '../pages/convocatoria-2025/cuarta/ConvocatoriaCuartaAsamblea2025';
 import { ConvocatoriaQuintaAsamblea2025 } from '../pages/convocatoria-2025/quinta/ConvocatoriaQuintaAsamblea2025';
 import { ConvocatoriaPrimeraAsamblea2026 } from '../pages/convocatoria-2026/primera/ConvocatoriaPrimeraAsamblea2026';
+import { ConvocatoriaSegundaAsamblea2026 } from '../pages/convocatoria-2026/segunda/ConvocatoriaSegundaAsamblea2026';
 
 export const Desktop = () => {
 	const classes = useStyles();
@@ -551,6 +552,12 @@ export const Desktop = () => {
 
 							<Route path="/convocatoria-primera-asamblea-2026">
 								<ConvocatoriaPrimeraAsamblea2026 />
+							</Route>
+							
+							{/* Segunda convocatoria 2026 */}
+
+							<Route path="/convocatoria-segunda-asamblea-2026">
+								<ConvocatoriaSegundaAsamblea2026 />
 							</Route>
 
 							<Route path="*">
