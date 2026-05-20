@@ -146,6 +146,7 @@ import { ConvocatoriaCuartaAsamblea2025 } from '../pages/convocatoria-2025/cuart
 import { ConvocatoriaQuintaAsamblea2025 } from '../pages/convocatoria-2025/quinta/ConvocatoriaQuintaAsamblea2025';
 import { ConvocatoriaPrimeraAsamblea2026 } from '../pages/convocatoria-2026/primera/ConvocatoriaPrimeraAsamblea2026';
 import { ConvocatoriaSegundaAsamblea2026 } from '../pages/convocatoria-2026/segunda/ConvocatoriaSegundaAsamblea2026';
+import { ConvocatoriaTerceraAsamblea2026 } from '../pages/convocatoria-2026/tercera/ConvocatoriaTerceraAsamblea2026';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -978,6 +979,12 @@ export const Responsive = () => {
 			name: 'Segunda Convocatoria asamblea extraordinaria 2026',
 			more: [],
 		},
+		{
+			icon: <CollectionsBookmarkRoundedIcon color="primary" fontSize="small" />,
+			path: '/convocatoria-tercera-asamblea-2026',
+			name: 'Tercera Convocatoria asamblea extraordinaria 2026',
+			more: [],
+		},
 	];
 
 	const drawer = (
@@ -1489,6 +1496,12 @@ export const Responsive = () => {
 
 						<Route path="/convocatoria-segunda-asamblea-2026">
 							<ConvocatoriaSegundaAsamblea2026 />
+						</Route>
+
+						{/* Tercera convocatoria 2026 */}
+
+						<Route path="/convocatoria-tercera-asamblea-2026">
+							<ConvocatoriaTerceraAsamblea2026 />
 						</Route>
 
 						<Route path="*">
