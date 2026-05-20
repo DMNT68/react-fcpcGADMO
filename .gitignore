@@ -27,3 +27,5 @@ bun.lock
 package-lock.json
 yarn.lock
 debug.log
+pnpm-lock.yaml
+pnpm-workspace.yaml
